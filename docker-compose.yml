@@ -1,0 +1,13 @@
+version: '3'
+services:
+  ramen:
+    container_name: ramen
+    build:
+      context: ./docker/ramen
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/app:cached
+    tty: true
+    command: yarn run dev
