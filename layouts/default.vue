@@ -63,7 +63,6 @@
 </template>
 
 <script>
-console.log ('aaaaaaaaaaa')
 export default {
   data() {
     return {
