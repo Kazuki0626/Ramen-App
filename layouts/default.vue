@@ -63,6 +63,7 @@
 </template>
 
 <script>
+console.log ('aaaaaaaaaaa')
 export default {
   data() {
     return {
@@ -86,9 +87,6 @@ export default {
       rightDrawer: false,
       title: 'Vuetify.js',
     }
-  },
-  mounted() {
-    console.log('aaaaaaaaaaa')
   },
 }
 </script>
