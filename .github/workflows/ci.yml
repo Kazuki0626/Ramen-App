@@ -1,7 +1,8 @@
 name: Ramen-App
 on:
-  pull_request:
-    types: [opened, synchronize]
+  push:
+    branches:
+    - main
 jobs:
   eslint:
     name: eslint
