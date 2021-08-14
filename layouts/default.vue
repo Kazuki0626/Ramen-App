@@ -87,9 +87,5 @@ export default {
       title: 'Vuetify.js',
     }
   },
-  mounted() {
-    console.log('Hello World!')
-    aaaaaaaaaaaaaaaaaaaaaaaaaaa
-  },
 }
 </script>
