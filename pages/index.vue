@@ -7,7 +7,7 @@
       <v-col class="text-center" cols="12">
         <h1 class="display-1 font-weight-thin mb-4">Ramen App</h1>
         <div class="my-2">
-          <nuxt-link to="/search">
+          <nuxt-link to="/search/">
             <div class="ramen-start">
               <v-btn outlined color="indigo">START</v-btn>
             </div>
@@ -20,6 +20,7 @@
 
 <style lang="scss" scoped>
 .v-parallax {
+  width: 100% !important;
   height: 100% !important;
 }
 .font-weight-thin {
@@ -29,14 +30,17 @@
 .ramen-start {
   padding: 30px 0;
 }
+
 .v-application a {
   text-decoration: none;
 }
+
 .v-btn:not(.v-btn--round).v-size--default {
   min-width: 200px;
   height: 45px;
   border-radius: 50px;
 }
+
 .v-application .indigo--text {
   color: #000 !important;
 }
