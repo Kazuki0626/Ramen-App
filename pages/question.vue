@@ -58,7 +58,7 @@
               </div>
               <div class="header-center_list_3">
                 <nuxt-link to="/form/">
-                  <li style="color: #fff">Contaqct</li>
+                  <li style="color: #fff">Contact</li>
                   <p style="color: #fff">お問い合わせ</p>
                 </nuxt-link>
               </div>

@@ -58,7 +58,7 @@
               </div>
               <div class="header-center_list_3">
                 <nuxt-link to="/form/">
-                  <li style="color: #fff">Contaqct</li>
+                  <li style="color: #fff">Contact</li>
                   <p style="color: #fff">お問い合わせ</p>
                 </nuxt-link>
               </div>
@@ -106,7 +106,7 @@
       <div class="search_detail_content">
         <div class="search_detail_content_1">
           <div class="search_detail_content_1_head">
-            <h1>1.<span>飲食店探しにピッタリ！</span></h1>
+            <h1>1.<span>多種多様な飲食店</span></h1>
           </div>
           <div class="search_detail_content_1_img">
             <img
@@ -114,23 +114,27 @@
             />
           </div>
           <div class="search_detail_content_1_description">
-            <p>お客様の条件にあった最適な飲食店をご紹介させていただきます。</p>
+            <p>
+              日本料理・イタリアン・フレンチ・韓国料理・居酒屋・焼き肉など多種多様な飲食店をお探しいただけます。
+            </p>
           </div>
         </div>
         <div class="search_detail_content_2">
           <div class="search_detail_content_2_head">
-            <h1>2.<span>サンプルタイトルです。</span></h1>
+            <h1>2.<span>サクッと検索</span></h1>
           </div>
           <div class="search_detail_content_2_img">
             <img src="https://tenpo.casio.jp/column_industry/images/071.png" />
           </div>
           <div class="search_detail_content_2_description">
-            <p>サンプルです。サンプルです。サンプルです。サンプルです。</p>
+            <p>
+              ご希望のエリア・食のジャンル・予算などからお客様にとって最適な飲食店をご紹介させていただきます。
+            </p>
           </div>
         </div>
         <div class="search_detail_content_3">
           <div class="search_detail_content_3_head">
-            <h1>3.<span>サンプルタイトルです。</span></h1>
+            <h1>3.<span>SNSで情報収集が可能</span></h1>
           </div>
           <div class="search_detail_content_3_img">
             <img
@@ -138,7 +142,9 @@
             />
           </div>
           <div class="search_detail_content_3_description">
-            <p>サンプルです。サンプルです。サンプルです。サンプルです。</p>
+            <p>
+              お店のホームページ・Instgram・Twitterなどからお店の雰囲気・メニューなどいろいろな情報を獲得できます。
+            </p>
           </div>
         </div>
       </div>
@@ -166,24 +172,21 @@
         </div>
         <div class="search-free_list_content">
           <div class="search-free_list_content_item">
-            <ul v-for="shop in shops" :key="shop.id">
-              <li
-                style="
-                  padding: 100px 0 50px 0;
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                "
-              >
-                <img :src="shop.photo.pc.l" />
-              </li>
-              <li><span>店名</span><br />{{ shop.name }}</li>
-              <li><span>住所</span><br />{{ shop.address }}</li>
-              <li><span>アクセス</span><br />{{ shop.mobile_access }}</li>
-              <li><span>電話番号</span><br />{{ shop.station_name }}</li>
-              <li><span>営業時間</span><br />{{ shop.open }}</li>
-              <li><span>定休日</span><br />{{ shop.close }}</li>
-            </ul>
+            <div
+              v-for="shop in shops"
+              :key="shop.id"
+              class="search-free_list_content_item_parent"
+            >
+              <img :src="shop.photo.pc.l" />
+              <div class="search-free_list_content_item_list">
+                <p><span>店名:</span>{{ shop.name }}</p>
+                <p><span>住所:</span>{{ shop.address }}</p>
+                <p><span>アクセス:</span>{{ shop.mobile_access }}</p>
+                <p><span>電話番号:</span>{{ shop.station_name }}</p>
+                <p><span>営業時間:</span>{{ shop.open }}</p>
+                <p><span>定休日:</span>{{ shop.close }}</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -833,7 +836,7 @@ export default {
   border-radius: 10px;
 }
 .search_detail_content_1_description {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   color: #000;
 }
@@ -849,7 +852,7 @@ export default {
   border-radius: 10px;
 }
 .search_detail_content_2_description {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   color: #000;
 }
@@ -865,7 +868,7 @@ export default {
   border-radius: 10px;
 }
 .search_detail_content_3_description {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   color: #000;
 }
@@ -911,24 +914,33 @@ export default {
   border-radius: 50px;
   margin: 25px 0 65px 0;
 }
-.search-free_list_content {
-  max-width: 70%;
-  margin: 0 auto;
-  display: flex;
+.search-free_list_content_item img {
+  width: 300px;
+  height: 250px;
 }
-.search-free_list_content_item ul {
-  list-style: none;
-  width: 100%;
-  float: right;
+.search-free_list_content_item_list {
+  width: 70%;
+  padding: 50px 0;
 }
-.search-free_list_content_item ul li {
-  line-height: 3;
-  font-size: 18px;
-  border-bottom: 2px solid #c8c8c8;
-  padding: 5px;
+.search-free_list_content_item_list p {
+  text-align: left;
+  line-height: 2;
+  letter-spacing: 3px;
 }
-.search-free_list_content_item ul li span {
+.search-free_list_content_item_list span {
   font-weight: bold;
+  margin-right: 15px;
+}
+.search-free_list_content_item_parent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #c8c8c8;
+  padding: 0 30px;
+  margin: 30px 0;
+}
+.search-free_list_content_item_parent p {
+  width: 80%;
 }
 .theme--dark.v-application {
   background: #fff !important;
