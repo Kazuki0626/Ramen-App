@@ -18,19 +18,19 @@
               <div class="header-content_item">
                 <div class="header-content_list">
                   <ul>
-                    <nuxt-link to="/login/login/">
+                    <nuxt-link to="../login/">
                       <li>新規登録・ログイン</li>
                     </nuxt-link>
-                    <nuxt-link to="/question/question/">
+                    <nuxt-link to="/question/">
                       <li>よくある質問</li>
                     </nuxt-link>
-                    <nuxt-link to="/form/form/">
+                    <nuxt-link to="/form/">
                       <li>お問い合わせ</li>
                     </nuxt-link>
-                    <nuxt-link to="/terms/terms/">
+                    <nuxt-link to="/terms/">
                       <li>ご利用規約</li>
                     </nuxt-link>
-                    <nuxt-link to="/privacy/privacy/">
+                    <nuxt-link to="/privacy/">
                       <li>プライバシーポリシー</li>
                     </nuxt-link>
                   </ul>
@@ -45,31 +45,31 @@
           <div class="header-center_list">
             <ul>
               <div class="header-center_list_1">
-                <nuxt-link to="/login/login/">
+                <nuxt-link to="/login/">
                   <li style="color: #fff">Resister・Login</li>
                   <p style="color: #fff">新規登録・ログイン</p>
                 </nuxt-link>
               </div>
               <div class="header-center_list_2">
-                <nuxt-link to="/question/question/">
+                <nuxt-link to="/question/">
                   <li style="color: #fff">Question</li>
                   <p style="color: #fff">よくある質問</p>
                 </nuxt-link>
               </div>
               <div class="header-center_list_3">
-                <nuxt-link to="/form/form/">
+                <nuxt-link to="/form/">
                   <li style="color: #fff">Contaqct</li>
                   <p style="color: #fff">お問い合わせ</p>
                 </nuxt-link>
               </div>
               <div class="header-center_list_4">
-                <nuxt-link to="/terms/terms/">
+                <nuxt-link to="/terms/">
                   <li style="color: #fff">Terms</li>
                   <p style="color: #fff">ご利用規約</p>
                 </nuxt-link>
               </div>
               <div class="header-center_list_5">
-                <nuxt-link to="/privacy/privacy/">
+                <nuxt-link to="/privacy/">
                   <li style="color: #fff">Privacy</li>
                   <p style="color: #fff">プライバシーポリシー</p>
                 </nuxt-link>
@@ -160,7 +160,31 @@
           />
         </div>
         <div class="search-free_btn">
-          <button type="button" class="search-free_btn_click">検索する</button>
+          <button type="button" class="search-free_btn_click" @click="doSearch">
+            検索する
+          </button>
+        </div>
+        <div class="search-free_list_content">
+          <div class="search-free_list_content_item">
+            <ul v-for="shop in shops" :key="shop.id">
+              <li
+                style="
+                  padding: 100px 0 50px 0;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                "
+              >
+                <img :src="shop.photo.pc.l" />
+              </li>
+              <li><span>店名</span><br />{{ shop.name }}</li>
+              <li><span>住所</span><br />{{ shop.address }}</li>
+              <li><span>アクセス</span><br />{{ shop.mobile_access }}</li>
+              <li><span>電話番号</span><br />{{ shop.station_name }}</li>
+              <li><span>営業時間</span><br />{{ shop.open }}</li>
+              <li><span>定休日</span><br />{{ shop.close }}</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -317,35 +341,34 @@
         <div class="search-shop_introduce_item">
           <div class="search-shop_introduce_item_1">
             <div class="search-shop_introduce_item_1_head">
-              <h1>いち凛 市ヶ谷本店</h1>
+              <h1>黒毛和牛焼肉 うし5 川越店</h1>
             </div>
             <div class="search-shop_introduce_item_1_carousel">
               <v-carousel hide-delimiters>
                 <v-carousel-item
-                  v-for="(item, i) in items"
+                  v-for="(img, i) in imgs_2"
                   :key="i"
-                  :src="item.src"
+                  :src="img.src"
                 ></v-carousel-item>
               </v-carousel>
             </div>
             <div class="search-shop_introduce_item_1_list">
               <ul>
+                <li><span>店名:</span><br />黒毛和牛焼肉 うし5 川越店</li>
+                <li><span>ジャンル:</span><br />焼肉・ホルモン・居酒屋</li>
                 <li>
-                  <span>店名:</span><br />個室居酒屋 和食郷土料理 いち凛
-                  市ヶ谷本店
+                  <span>住所:</span><br />埼玉県川越市菅原町22-2 第二MSビル 4F
                 </li>
-                <li><span>ジャンル:</span><br />居酒屋</li>
+                <li><span>電話番号:</span><br />050-3550-2876</li>
+                <li><span>営業時間:</span><br />12:00～23:00<br />日曜営業</li>
                 <li>
-                  <span>住所:</span><br />東京都新宿区市谷田町1-2-1 戸塚ビル 3F
+                  <span>交通手段:</span><br />JR 川越線 川越駅 徒歩1分<br />東武東上線
+                  川越駅 徒歩1分<br />川越駅から185m
                 </li>
-                <li><span>電話番号:</span><br />050-5596-6122</li>
-                <li><span>営業時間:</span><br />16：30～24：00<br /></li>
                 <li>
-                  <span>交通手段:</span><br />ＪＲ総武線 市ケ谷駅 徒歩1分<br />ＪＲ中央線
-                  市ケ谷駅 徒歩1分<br />地下鉄南北線 市ケ谷駅 徒歩2分<br />地下鉄有楽町線
-                  市ケ谷駅 徒歩2分<br />市ケ谷駅から225m
+                  <span>予算:</span><br />ランチ: ￥2,000～￥2,999<br />ディナー:
+                  ￥4,000～￥7,999
                 </li>
-                <li><span>予算:</span><br />￥3,000～￥4,999</li>
                 <li>
                   <span>支払い方法:</span
                   ><br />カード可（VISA、Master、JCB、AMEX、Diners）<br />電子マネー不可
@@ -355,12 +378,12 @@
           </div>
           <div class="search-shop_introduce_item_2">
             <div class="search-shop_introduce_item_2_head">
-              <h1>レストラン REGINA 錦糸店</h1>
+              <h1>横浜テラス 横浜西口駅前店</h1>
             </div>
             <div class="search-shop_introduce_item_2_carousel">
               <v-carousel hide-delimiters>
                 <v-carousel-item
-                  v-for="(img, index) in imgs_1"
+                  v-for="(img, index) in imgs_3"
                   :key="index"
                   :src="img.src"
                 ></v-carousel-item>
@@ -368,24 +391,26 @@
             </div>
             <div class="search-shop_introduce_item_2_list">
               <ul>
+                <li><span>店名:</span><br />横浜テラス 横浜西口駅前店</li>
+                <li><span>ジャンル:</span><br />ダイニングバー</li>
                 <li>
-                  <span>店名:</span><br />レストラン レジーナ REGINA 錦糸町
+                  <span>住所:</span><br />神奈川県横浜市西区南幸1-9-7
+                  ウェストDKビル 2F
                 </li>
-                <li><span>ジャンル:</span><br />イタリアン・パスタ・バー</li>
+                <li><span>電話番号:</span><br />045-548-6730</li>
                 <li>
-                  <span>住所:</span><br />東京都墨田区江東橋4-25-5 鈴木ビル ７Ｆ
-                </li>
-                <li><span>電話番号:</span><br />03-5600-5511</li>
-                <li>
-                  <span>営業時間:</span
-                  ><br />東京都の要請により店舗休業となります。<br />
+                  <span>営業時間:</span><br />ランチ 11:30～15:30<br />ディナー
+                  17:00～24:00
                 </li>
                 <li>
-                  <span>交通手段:</span><br />総武線錦糸町駅南6番出口 徒歩3分<br />東京メトロ半蔵門線錦糸町駅1番出口
-                  徒歩1分<br />中央・総武線 両国駅 徒歩30分<br />半蔵門線 押上駅
-                  徒歩21分<br />錦糸町駅から270m
+                  <span>交通手段:</span><br />JR 横浜駅 徒歩1分<br />相鉄線
+                  横浜駅 徒歩1分<br />京浜東北線 桜木町駅 徒歩30分<br />みなとみらい線
+                  みなとみらい駅 24分<br />横浜駅から285m
                 </li>
-                <li><span>予算:</span><br />￥3,000～￥9,999</li>
+                <li>
+                  <span>予算:</span><br />ランチ: ￥1,000～￥1,999<br />ディナー:
+                  ￥3,000～￥5,999
+                </li>
                 <li>
                   <span>支払い方法:</span
                   ><br />カード可（VISA、Master、JCB、AMEX、Diners）<br />電子マネー不可
@@ -400,19 +425,19 @@
       <div class="footer-top">
         <div class="footer-top_content">
           <ul class="footer-top_content_list">
-            <nuxt-link to="../login/login">
+            <nuxt-link to="/login">
               <li>新規登録・ログイン</li>
             </nuxt-link>
-            <nuxt-link to="../question/question">
+            <nuxt-link to="/question">
               <li>よくある質問</li>
             </nuxt-link>
-            <nuxt-link to="../form/form">
+            <nuxt-link to="/form">
               <li>お問い合わせ</li>
             </nuxt-link>
-            <nuxt-link to="../terms/terms">
+            <nuxt-link to="/terms">
               <li>ご利用規約</li>
             </nuxt-link>
-            <nuxt-link to="../privacy/privacy">
+            <nuxt-link to="/privacy">
               <li>プライバシーポリシー</li>
             </nuxt-link>
           </ul>
@@ -430,11 +455,11 @@
 </template>
 
 <script>
-// const getCurrentPosition = () => {
-//   return new Promise((resolve, reject) => {
-//     navigator.geolocation.getCurrentPosition(resolve, reject)
-//   })
-// }
+const getCurrentPosition = () => {
+  return new Promise((resolve, reject) => {
+    navigator.geolocation.getCurrentPosition(resolve, reject)
+  })
+}
 
 export default {
   layout: 'index',
@@ -473,6 +498,28 @@ export default {
           src: 'https://rimage.hitosara.com/gg/image/0020000935/0020000935F35_551x413y.jpg?t=1624005875',
         },
       ],
+      imgs_2: [
+        {
+          src: 'https://imgfp.hotp.jp/IMGH/09/21/P038020921/P038020921_480.jpg',
+        },
+        {
+          src: 'https://tblg.k-img.com/restaurant/images/Rvw/155629/320x320_square_155629378.jpg',
+        },
+        {
+          src: 'https://rimage.gnst.jp/rest/img/84ha239b0000/s_0n5v.jpg?t=1627902302',
+        },
+      ],
+      imgs_3: [
+        {
+          src: 'https://imgfp.hotp.jp/IMGH/24/32/P036322432/P036322432_480.jpg',
+        },
+        {
+          src: 'https://tblg.k-img.com/restaurant/images/Rvw/125507/640x640_rect_125507695.jpg',
+        },
+        {
+          src: 'https://imgfp.hotp.jp/IMGH/83/60/P030798360/P030798360_480.jpg',
+        },
+      ],
     }
   },
   mounted() {
@@ -487,44 +534,51 @@ export default {
         },
       }
     )
-      .then(this.setShop)
+      .then((data) => {
+        this.shops = data.data.results.shop
+        console.log(data.data.results.shop, '11111')
+      })
       .catch(this.setError)
   },
   methods: {
+    doSearch() {},
     setError(err) {
       console.log(err)
       this.error = true
     },
-    // async mounted() {
-    //   try {
-    //     const position = await getCurrentPosition().catch(this.setError)
-    //     const { data } = await this.$axios.get(
-    //       'http://localhost:3000/api/gourmet/v1/',
-    //       {
-    //         params: {
-    //           key: process.env.apikey,
-    //           lat: position.coords.latitude,
-    //           lng: position.coords.longitude,
-    //           format: 'json',
-    //         },
-    //       }
-    //       if (data.results.error !== undefined) {
-    //       this.error = true
-    //       return;
-    //     }
-    //     this.shops = data.results.shop
-    //   } catch(error) {
-    //     this.setError(error)
-    //   }
-    // }
-  },
-  async asyncData({ $axios }) {
-    const url = `http://webservice.recruit.co.jp/hotpepper/gourmet/v1/?key=${process.env.API_URL}&large_area=Z011&format=json`
-    const response = await $axios.$get(url)
-    console.log(response.results.shop)
-    return {
-      posts: response,
-    }
+    async fetchData() {
+      try {
+        const position = await getCurrentPosition().catch(this.setError)
+        // TODO positionが取れなくてundefindになる。ロケーション情報が取れないのでこれを対処する
+        // https://qiita.com/Mitsunori_Tsukada/items/5f25d1808dd3d9840b85
+        const { data } = await this.$axios.get(
+          'http://localhost:3000/api/gourmet/v1/',
+          {
+            params: {
+              key: process.env.apikey,
+              lat: position.coords.latitude,
+              lng: position.coords.longitude,
+              format: 'json',
+            },
+          }
+        )
+        if (data.results.error !== undefined) {
+          this.error = true
+          return
+        }
+        console.log(data, 'fetchData')
+        this.shops = data.results.shop
+      } catch (error) {
+        this.setError(error)
+      }
+    },
+    async asyncData({ $axios }) {
+      const url = `http://webservice.recruit.co.jp/hotpepper/gourmet/v1/?key=${process.env.API_URL}&large_area=Z011&format=json`
+      const response = await $axios.$get(url)
+      return {
+        posts: response,
+      }
+    },
   },
 }
 </script>
@@ -615,11 +669,13 @@ export default {
   margin: 10px 0;
 }
 .header-bottom_content_left_description p {
-  letter-spacing: 3px;
-  padding: 12px 0 15px 0;
+  letter-spacing: 4px;
+  padding: 5px 0;
   color: #fff;
+  font-size: 18px;
 }
 .header-bottom_btn {
+  margin: 10px 0;
   width: 175px;
 }
 .v-application .indigo--text {
@@ -842,7 +898,7 @@ export default {
   margin-left: 12px;
 }
 .search-free_form_text {
-  width: 80%;
+  width: 90%;
   padding: 9px 8px 8px 42px;
   border: 2px solid #999;
   border-radius: 6px;
@@ -854,6 +910,25 @@ export default {
   width: 300px;
   border-radius: 50px;
   margin: 25px 0 65px 0;
+}
+.search-free_list_content {
+  max-width: 70%;
+  margin: 0 auto;
+  display: flex;
+}
+.search-free_list_content_item ul {
+  list-style: none;
+  width: 100%;
+  float: right;
+}
+.search-free_list_content_item ul li {
+  line-height: 3;
+  font-size: 18px;
+  border-bottom: 2px solid #c8c8c8;
+  padding: 5px;
+}
+.search-free_list_content_item ul li span {
+  font-weight: bold;
 }
 .theme--dark.v-application {
   background: #fff !important;
@@ -1022,7 +1097,6 @@ export default {
   padding: 8px;
 }
 .search-shop_introduce_item_1_list ul li span {
-  margin-right: 10px;
   font-weight: bold;
 }
 .search-shop_introduce_item_2 {
@@ -1055,7 +1129,6 @@ export default {
   padding: 8px;
 }
 .search-shop_introduce_item_2_list ul li span {
-  margin-right: 10px;
   font-weight: bold;
 }
 .footer-top {

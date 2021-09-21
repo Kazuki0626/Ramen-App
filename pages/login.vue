@@ -18,19 +18,19 @@
               <div class="header-content_item">
                 <div class="header-content_list">
                   <ul>
-                    <nuxt-link to="/login/login/">
+                    <nuxt-link to="/login/">
                       <li>新規登録・ログイン</li>
                     </nuxt-link>
-                    <nuxt-link to="/question/question/">
+                    <nuxt-link to="/question/">
                       <li>よくある質問</li>
                     </nuxt-link>
-                    <nuxt-link to="/form/form/">
+                    <nuxt-link to="/form/">
                       <li>お問い合わせ</li>
                     </nuxt-link>
-                    <nuxt-link to="/terms/terms/">
+                    <nuxt-link to="/terms/">
                       <li>ご利用規約</li>
                     </nuxt-link>
-                    <nuxt-link to="/privacy/privacy/">
+                    <nuxt-link to="/privacy/">
                       <li>プライバシーポリシー</li>
                     </nuxt-link>
                   </ul>
@@ -45,31 +45,31 @@
           <div class="header-center_list">
             <ul>
               <div class="header-center_list_1">
-                <nuxt-link to="/login/login/">
+                <nuxt-link to="/login/">
                   <li style="color: #fff">Resister・Login</li>
                   <p style="color: #fff">新規登録・ログイン</p>
                 </nuxt-link>
               </div>
               <div class="header-center_list_2">
-                <nuxt-link to="/question/question/">
+                <nuxt-link to="/question/">
                   <li style="color: #fff">Question</li>
                   <p style="color: #fff">よくある質問</p>
                 </nuxt-link>
               </div>
               <div class="header-center_list_3">
-                <nuxt-link to="/contact/contact/">
+                <nuxt-link to="/form/">
                   <li style="color: #fff">Contaqct</li>
                   <p style="color: #fff">お問い合わせ</p>
                 </nuxt-link>
               </div>
               <div class="header-center_list_4">
-                <nuxt-link to="/terms/terms/">
+                <nuxt-link to="/terms/">
                   <li style="color: #fff">Terms</li>
                   <p style="color: #fff">ご利用規約</p>
                 </nuxt-link>
               </div>
               <div class="header-center_list_5">
-                <nuxt-link to="/privacy/privacy/">
+                <nuxt-link to="/privacy/">
                   <li style="color: #fff">Privacy</li>
                   <p style="color: #fff">プライバシーポリシー</p>
                 </nuxt-link>
@@ -154,19 +154,19 @@
       <div class="footer-top">
         <div class="footer-top_content">
           <ul class="footer-top_content_list">
-            <nuxt-link to="../login/login">
+            <nuxt-link to="/login">
               <li>新規登録・ログイン</li>
             </nuxt-link>
-            <nuxt-link to="../question/question">
+            <nuxt-link to="/question">
               <li>よくある質問</li>
             </nuxt-link>
-            <nuxt-link to="../form/form">
+            <nuxt-link to="/form">
               <li>お問い合わせ</li>
             </nuxt-link>
-            <nuxt-link to="../terms/terms">
+            <nuxt-link to="/terms">
               <li>ご利用規約</li>
             </nuxt-link>
-            <nuxt-link to="../privacy/privacy">
+            <nuxt-link to="/privacy">
               <li>プライバシーポリシー</li>
             </nuxt-link>
           </ul>
