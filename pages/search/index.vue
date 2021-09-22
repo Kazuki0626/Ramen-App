@@ -19,7 +19,10 @@
                 <div class="header-content_list">
                   <ul>
                     <nuxt-link to="../login/">
-                      <li>新規登録・ログイン</li>
+                      <li>ログイン</li>
+                    </nuxt-link>
+                    <nuxt-link to="../resister/">
+                      <li>新規登録</li>
                     </nuxt-link>
                     <nuxt-link to="/question/">
                       <li>よくある質問</li>
@@ -46,29 +49,35 @@
             <ul>
               <div class="header-center_list_1">
                 <nuxt-link to="/login/">
-                  <li style="color: #fff">Resister・Login</li>
-                  <p style="color: #fff">新規登録・ログイン</p>
+                  <li style="color: #fff">Login</li>
+                  <p style="color: #fff">ログイン</p>
                 </nuxt-link>
               </div>
               <div class="header-center_list_2">
+                <nuxt-link to="/resister/">
+                  <li style="color: #fff">Resister</li>
+                  <p style="color: #fff">新規登録</p>
+                </nuxt-link>
+              </div>
+              <div class="header-center_list_3">
                 <nuxt-link to="/question/">
                   <li style="color: #fff">Question</li>
                   <p style="color: #fff">よくある質問</p>
                 </nuxt-link>
               </div>
-              <div class="header-center_list_3">
+              <div class="header-center_list_4">
                 <nuxt-link to="/form/">
                   <li style="color: #fff">Contact</li>
                   <p style="color: #fff">お問い合わせ</p>
                 </nuxt-link>
               </div>
-              <div class="header-center_list_4">
+              <div class="header-center_list_5">
                 <nuxt-link to="/terms/">
                   <li style="color: #fff">Terms</li>
                   <p style="color: #fff">ご利用規約</p>
                 </nuxt-link>
               </div>
-              <div class="header-center_list_5">
+              <div class="header-center_list_6">
                 <nuxt-link to="/privacy/">
                   <li style="color: #fff">Privacy</li>
                   <p style="color: #fff">プライバシーポリシー</p>
@@ -182,7 +191,7 @@
                 <p><span>店名:</span>{{ shop.name }}</p>
                 <p><span>住所:</span>{{ shop.address }}</p>
                 <p><span>アクセス:</span>{{ shop.mobile_access }}</p>
-                <p><span>電話番号:</span>{{ shop.station_name }}</p>
+                <p><span>電話番号:</span>{{ shop.credit_card }}</p>
                 <p><span>営業時間:</span>{{ shop.open }}</p>
                 <p><span>定休日:</span>{{ shop.close }}</p>
               </div>
@@ -429,7 +438,10 @@
         <div class="footer-top_content">
           <ul class="footer-top_content_list">
             <nuxt-link to="/login">
-              <li>新規登録・ログイン</li>
+              <li>ログイン</li>
+            </nuxt-link>
+            <nuxt-link to="/resister">
+              <li>新規登録</li>
             </nuxt-link>
             <nuxt-link to="/question">
               <li>よくある質問</li>
@@ -544,7 +556,21 @@ export default {
       .catch(this.setError)
   },
   methods: {
-    doSearch() {},
+    doSearch() {
+      this.$axios
+        .get(
+          `http://webservice.recruit.co.jp/hotpepper/gourmet/v1/?key=${process.env.API_URL}&large_area=Z011&format=json`,
+          {
+            params: {
+              key: process.env.API_URL,
+              format: 'json',
+            },
+          }
+        )
+        .then((data) => {
+          this.shops = data.data.results.shop
+        })
+    },
     setError(err) {
       console.log(err)
       this.error = true
@@ -649,6 +675,9 @@ export default {
   width: 100%;
 }
 .header-center_list_5 {
+  width: 100%;
+}
+.header-center_list_6 {
   width: 100%;
 }
 .header-bottom {
@@ -914,6 +943,9 @@ export default {
   border-radius: 50px;
   margin: 25px 0 65px 0;
 }
+.search-free_list_content_item {
+  padding: 0 0 75px 0;
+}
 .search-free_list_content_item img {
   width: 300px;
   height: 250px;
@@ -926,6 +958,8 @@ export default {
   text-align: left;
   line-height: 2;
   letter-spacing: 3px;
+  text-indent: -1em;
+  padding-left: 3.5em;
 }
 .search-free_list_content_item_list span {
   font-weight: bold;

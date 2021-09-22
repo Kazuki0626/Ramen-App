@@ -1,5 +1,5 @@
 <template>
-  <div class="login-page">
+  <section class="resister-top">
     <header class="header">
       <div class="header-top">
         <div class="header-top_content">
@@ -18,10 +18,10 @@
               <div class="header-content_item">
                 <div class="header-content_list">
                   <ul>
-                    <nuxt-link to="/login/">
+                    <nuxt-link to="../login/">
                       <li>ログイン</li>
                     </nuxt-link>
-                    <nuxt-link to="/resister/">
+                    <nuxt-link to="../resister/">
                       <li>新規登録</li>
                     </nuxt-link>
                     <nuxt-link to="/question/">
@@ -88,32 +88,56 @@
         </div>
       </div>
     </header>
-    <div class="login-page_content">
-      <div class="login-page_lgoin">
-        <div class="login-page_login_head">
-          <h1>Login</h1>
-          <p>ログイン</p>
+    <div class="resister-form">
+      <div class="resister-form_content">
+        <div class="resister-form_head">
+          <h1>Resister</h1>
+          <p>新規登録</p>
         </div>
-        <div class="login-page_login_content">
-          <div class="login-page_login_name">
+        <div class="resister-form_resister_content">
+          <div class="resister-form_resister_name">
             ユーザーネーム
             <input
               type="text"
               placeholder="ユーザーネーム"
-              class="login-page_login_name_form"
+              class="resister-form_resister_name_form"
             />
           </div>
-          <div class="login-page_login_password">
+          <div class="resister-form_resister_tel">
+            電話番号
+            <input
+              type="text"
+              placeholder="電話番号"
+              class="resister-form_resister_tel_form"
+            />
+          </div>
+          <div class="resister-form_resister_address">
+            住所
+            <input
+              type="text"
+              placeholder="住所"
+              class="resister-form_resister_address_form"
+            />
+          </div>
+          <div class="resister-form_resister_email">
+            メールアドレス
+            <input
+              type="text"
+              placeholder="メールアドレス"
+              class="resister-form_resister_email_form"
+            />
+          </div>
+          <div class="resister-form_resister_password">
             パスワード
             <input
               type="password"
               placeholder="パスワード"
-              class="login-page_login_password_form"
+              class="resister-form_resister_password_form"
             />
           </div>
-          <div class="login-page_login_btn">
-            <button type="button" class="login-page_login_btn_click">
-              ログインする
+          <div class="resister-form_resister_btn">
+            <button type="button" class="resister-form_resister_btn_click">
+              新規登録する
             </button>
           </div>
         </div>
@@ -152,14 +176,10 @@
         </div>
       </div>
     </footer>
-  </div>
+  </section>
 </template>
 
-<script></script>
-
 <style lang="scss" scoped>
-@import url(https://fonts.googleapis.com/css?family=Roboto:300);
-
 .header-top_content {
   width: 70%;
   margin: 0 auto;
@@ -288,7 +308,7 @@
   top: 0;
   left: 100%;
   z-index: 99;
-  background: orange;
+  background-color: rgb(241, 154, 41);
   transition: 0.8s;
   margin: 0 auto;
 }
@@ -299,7 +319,7 @@
 }
 
 .header-content_head h1 {
-  color: #000;
+  color: #fff;
   letter-spacing: 3px;
   font-weight: lighter;
 }
@@ -313,7 +333,7 @@
 }
 
 .header-content_list ul li {
-  color: #000;
+  color: #fff;
   line-height: 6;
   letter-spacing: 2px;
   list-style: none;
@@ -329,60 +349,116 @@
   margin: 0 auto;
   padding: 30px 0;
 }
+
 #header-check:checked ~ .header-content {
   left: 0;
 }
-.login-page_content {
+
+.resister-form {
   background-color: #fff;
-  color: #000;
 }
-.login-page_login_content {
+
+.resister-form_content {
   max-width: 50%;
   margin: 0 auto;
-  padding: 0 0 50px 0;
 }
-.login-page_login_head {
+
+.resister-form_head {
   text-align: center;
-  padding: 30px 0;
+  padding: 50px 0 30px 0;
 }
-.login-page_login_head h1 {
-  letter-spacing: 4px;
+
+.resister-form_head h1 {
+  font-size: 32px;
+  letter-spacing: 3px;
   font-weight: Normal;
+  color: #000;
 }
-.login-page_login_head p {
+
+.resister-form_head p {
+  font-size: 20px;
   letter-spacing: 2px;
+  color: #000;
 }
-.login-page_login_name {
+
+.resister-form_resister_name {
+  color: #000;
   width: 100%;
   padding: 30px 0;
 }
-.login-page_login_name_form {
+
+.resister-form_resister_name_form {
   width: 100%;
   border: 1px solid #c8c8c8;
   padding: 12px 24px;
   border-radius: 8px;
 }
-.login-page_login_password {
+
+.resister-form_resister_address {
+  color: #000;
   width: 100%;
-  padding: 10px 0 45px 0;
+  padding: 30px 0;
 }
-.login-page_login_password_form {
+
+.resister-form_resister_address_form {
   width: 100%;
   border: 1px solid #c8c8c8;
   padding: 12px 24px;
   border-radius: 8px;
 }
-.login-page_login_btn {
+
+.resister-form_resister_tel {
+  color: #000;
+  width: 100%;
+  padding: 30px 0;
+}
+
+.resister-form_resister_tel_form {
+  width: 100%;
+  border: 1px solid #c8c8c8;
+  padding: 12px 24px;
+  border-radius: 8px;
+}
+
+.resister-form_resister_email {
+  color: #000;
+  width: 100%;
+  padding: 30px 0;
+}
+
+.resister-form_resister_email_form {
+  width: 100%;
+  border: 1px solid #c8c8c8;
+  padding: 12px 24px;
+  border-radius: 8px;
+}
+
+.resister-form_resister_password {
+  width: 100%;
+  padding: 30px 0 60px 0;
+  color: #000;
+}
+
+.resister-form_resister_password_form {
+  width: 100%;
+  border: 1px solid #c8c8c8;
+  padding: 12px 24px;
+  border-radius: 8px;
+}
+
+.resister-form_resister_btn {
   text-align: center;
-  padding: 0 0 30px 0;
+  padding: 0 0 75px 0;
 }
-.login-page_login_btn_click {
+
+.resister-form_resister_btn_click {
   background-color: #ff8e00;
   border-radius: 30px;
   padding: 10px;
   width: 250px;
   color: #fff;
 }
+
 .footer-top {
   background-color: #ff8e00;
 }
