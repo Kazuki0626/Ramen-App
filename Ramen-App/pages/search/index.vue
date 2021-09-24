@@ -84,6 +84,75 @@
         </div>
       </div>
     </div>
+    <div class="search-problem">
+      <div class="search-problem_head">
+        <h1>こんな悩みはありませんか？</h1>
+      </div>
+      <div class="search-problem_content">
+        <div class="search-problem_content_left">
+          <div class="search-problem_content_left_img">
+            <img
+              src="https://4.bp.blogspot.com/-MZRiDNtddqU/V_I4GNMYpqI/AAAAAAAA-mY/2Sw5eYtM4_oyOmO3kF0mdIKVl29Cuc9yACLcB/s800/businessman1_nayami.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="search-problem_content_right">
+          <div class="search-problem_content_right_text">
+            <div class="search-problem_content_right_text_1">
+              <div class="search-problem_content_right_text_1_img">
+                <img
+                  src="	https://thumb.ac-illust.com/96/9651079326788c88114793636ef34f5c_t.jpeg"
+                />
+              </div>
+              <div class="search-problem_content_right_text_1_text">
+                <h1>どのサービスで飲食店を探せばいいかわからない...</h1>
+              </div>
+            </div>
+            <div class="search-problem_content_right_text_2">
+              <div class="search-problem_content_right_text_2_img">
+                <img
+                  src="	https://thumb.ac-illust.com/96/9651079326788c88114793636ef34f5c_t.jpeg"
+                />
+              </div>
+              <div class="search-problem_content_right_text_2_text">
+                <h1>時間がないけど飲食店が見つからない...</h1>
+              </div>
+            </div>
+            <div class="search-problem_content_right_text_3">
+              <div class="search-problem_content_right_text_3_img">
+                <img
+                  src="	https://thumb.ac-illust.com/96/9651079326788c88114793636ef34f5c_t.jpeg"
+                />
+              </div>
+              <div class="search-problem_content_right_text_3_text">
+                <h1>ご希望の価格帯のお店が見つからない...</h1>
+              </div>
+            </div>
+            <div class="search-problem_content_right_text_4">
+              <div class="search-problem_content_right_text_4_img">
+                <img
+                  src="	https://thumb.ac-illust.com/96/9651079326788c88114793636ef34f5c_t.jpeg"
+                />
+              </div>
+              <div class="search-problem_content_right_text_4_text">
+                <h1>周辺にどんなお店があるかわからない...</h1>
+              </div>
+            </div>
+            <div class="search-problem_content_right_text_5">
+              <div class="search-problem_content_right_text_5_img">
+                <img
+                  src="	https://thumb.ac-illust.com/96/9651079326788c88114793636ef34f5c_t.jpeg"
+                />
+              </div>
+              <div class="search-problem_content_right_text_5_text">
+                <h1>お店のSNSを探すのに苦労している...</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="search_detail">
       <div class="search_detail_head">
         <h1 style="font-size: 32px">Ramen App とは ?</h1>
@@ -1218,7 +1287,7 @@ export default {
 }
 
 .top-sample {
-  padding: 50px 0 0 0;
+  padding: 150px 0 75px 0;
 }
 
 .top-sample-image {
@@ -1235,14 +1304,14 @@ export default {
   max-width: 50%;
   margin: 0 auto;
   position: fixed;
-  top: 5.6%;
+  top: 5.8%;
   left: 24.6%;
   line-height: 3;
   letter-spacing: 3px;
 }
 .top-sample_img_1 {
   position: fixed;
-  top: 4.9%;
+  top: 5.5%;
   left: 200px;
   width: 200px;
   height: 180px;
@@ -1254,7 +1323,7 @@ export default {
 }
 .top-sample_img_2 {
   position: fixed;
-  top: 4.9%;
+  top: 5.5%;
   right: 200px;
   width: 200px;
   height: 180px;
@@ -1266,7 +1335,7 @@ export default {
 }
 .top-sample_img_3 {
   position: fixed;
-  top: 7.5%;
+  top: 7.8%;
   left: 220px;
   width: 150px;
   height: 130px;
@@ -1278,7 +1347,7 @@ export default {
 }
 .top-sample_img_4 {
   position: fixed;
-  top: 7.5%;
+  top: 7.9%;
   right: 220px;
   width: 150px;
   height: 130px;
@@ -1291,5 +1360,113 @@ export default {
 .top-sample_head h1 {
   font-size: 36px;
   font-weight: Normal;
+}
+.search-problem {
+  background-color: #fff;
+  padding: 50px 0;
+}
+.search-problem_head {
+  text-align: center;
+  padding: 0 0 100px 0;
+}
+.search-problem_head h1 {
+  color: #000;
+  font-size: 36px;
+  letter-spacing: 3px;
+  font-weight: Normal;
+}
+.search-problem_content {
+  display: flex;
+}
+.search-problem_content_left {
+  width: 50%;
+}
+.search-problem_content_left img {
+  width: 100%;
+  height: 500px;
+  object-fit: contain;
+}
+.search-problem_content_right {
+  width: 50%;
+}
+.search-problem_content_right_text_1 {
+  display: flex;
+  align-items: center;
+  padding: 30px 0;
+}
+.search-problem_content_right_text_1_img {
+  width: 50px;
+  height: 40px;
+}
+.search-problem_content_right_text_1_img img {
+  width: 100%;
+}
+.search-problem_content_right_text_1 h1 {
+  color: #000;
+  border-bottom: 2px solid #ff8e00;
+}
+.search-problem_content_right_text_2 {
+  display: flex;
+  align-items: center;
+  padding: 30px 0;
+}
+.search-problem_content_right_text_2_img {
+  width: 50px;
+  height: 40px;
+}
+.search-problem_content_right_text_2_img img {
+  width: 100%;
+}
+.search-problem_content_right_text_2 h1 {
+  color: #000;
+  border-bottom: 2px solid #ff8e00;
+}
+.search-problem_content_right_text_3 {
+  display: flex;
+  align-items: center;
+  padding: 30px 0;
+}
+.search-problem_content_right_text_3_img {
+  width: 50px;
+  height: 40px;
+}
+.search-problem_content_right_text_3_img img {
+  width: 100%;
+}
+.search-problem_content_right_text_3 h1 {
+  color: #000;
+  border-bottom: 2px solid #ff8e00;
+}
+.search-problem_content_right_text_4 {
+  display: flex;
+  align-items: center;
+  padding: 30px 0;
+}
+.search-problem_content_right_text_4_img {
+  width: 50px;
+  height: 40px;
+}
+.search-problem_content_right_text_4_img img {
+  width: 100%;
+}
+.search-problem_content_right_text_4 h1 {
+  color: #000;
+  border-bottom: 2px solid #ff8e00;
+}
+.search-problem_content_right_text_5 {
+  display: flex;
+  align-items: center;
+  padding: 30px 0;
+}
+.search-problem_content_right_text_5_img {
+  width: 50px;
+  height: 40px;
+}
+.search-problem_content_right_text_5_img img {
+  width: 100%;
+}
+.search-problem_content_right_text_5 h1 {
+  color: #000;
+  border-bottom: 2px solid #ff8e00;
 }
 </style>
