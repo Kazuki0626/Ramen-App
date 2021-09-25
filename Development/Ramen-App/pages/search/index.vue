@@ -5,7 +5,9 @@
         <div class="header-top_content">
           <div class="header_head">
             <nuxt-link to="/search/">
-              <h1>Ramen App</h1>
+              <div class="header_head_img">
+                <img src="@/assets/img/ramen-app.png" />
+              </div>
             </nuxt-link>
           </div>
           <div class="header-btn">
@@ -68,16 +70,6 @@
             <div class="top-sample_img_2">
               <img
                 src="https://2.bp.blogspot.com/-oQkczCTrfJg/UZB7gStqHlI/AAAAAAAASEU/vkvxHOCAb1M/s800/job_izakaya_beer.png"
-              />
-            </div>
-            <div class="top-sample_img_3">
-              <img
-                src="https://3.bp.blogspot.com/-Gay7H2Et5pI/U2ssP0xvTRI/AAAAAAAAgCQ/mVnga4ffctw/s800/tatemono_izakaya.png"
-              />
-            </div>
-            <div class="top-sample_img_4">
-              <img
-                src="https://ebipop.com/wp-content/uploads/2018/12/noren.png"
               />
             </div>
           </div>
@@ -153,12 +145,6 @@
         </div>
       </div>
     </div>
-    <div class="search-solution">
-      <div class="search-solution_head">
-        <h1></h1>
-      </div>
-      <div class="search-solution_content"></div>
-    </div>
     <div class="search-free">
       <div class="search-free_content">
         <div class="search-free_head">
@@ -171,7 +157,7 @@
           />
           <input
             type="text"
-            placeholder="店名・駅名・ジャンル"
+            placeholder="店名・駅名・ジャンル・等"
             class="search-free_form_text"
           />
         </div>
@@ -626,11 +612,12 @@ export default {
   filter: brightness(120%);
 }
 .header-top_content {
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  padding: 15px 0;
+  align-items: center;
+  padding: 5px 0 8px 0;
 }
 .header-top {
   border-top: 4px solid #ff8e00;
@@ -639,6 +626,15 @@ export default {
 .header_head {
   display: flex;
   align-items: center;
+}
+.header_head_img {
+  width: 100%;
+  height: 100%;
+}
+.header_head_img img {
+  width: 500px;
+  height: 90px;
+  object-fit: cover;
 }
 .header_head h1 {
   letter-spacing: 3px;
@@ -1244,6 +1240,7 @@ export default {
 
 .top-sample {
   padding: 150px 0 100px 0;
+  width: 100%;
 }
 
 .top-sample-image {
@@ -1260,58 +1257,33 @@ export default {
   max-width: 50%;
   margin: 0 auto;
   position: fixed;
-  top: 6.1%;
+  top: 6.8%;
   left: 24.6%;
   line-height: 3;
   letter-spacing: 3px;
 }
 .top-sample_img_1 {
   position: fixed;
-  top: 5.6%;
-  left: 200px;
-  width: 200px;
-  height: 180px;
+  top: 6%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 .top-sample_img_1 img {
-  width: 100%;
-  height: 100%;
+  width: 200px;
+  height: 180px;
 }
 .top-sample_img_2 {
   position: fixed;
-  top: 5.6%;
-  right: 200px;
-  width: 200px;
-  height: 180px;
+  top: 6%;
+  right: 27%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 .top-sample_img_2 img {
-  width: 100%;
-  height: 100%;
-}
-.top-sample_img_3 {
-  position: fixed;
-  top: 8%;
-  left: 220px;
-  width: 150px;
-  height: 130px;
-  object-fit: cover;
-}
-.top-sample_img_3 img {
-  width: 100%;
-  height: 100%;
-}
-.top-sample_img_4 {
-  position: fixed;
-  top: 8.1%;
-  right: 220px;
-  width: 150px;
-  height: 130px;
-  object-fit: cover;
-}
-.top-sample_img_4 img {
-  width: 100%;
-  height: 100%;
+  width: 200px;
+  height: 180px;
 }
 .top-sample_head h1 {
   font-size: 36px;
