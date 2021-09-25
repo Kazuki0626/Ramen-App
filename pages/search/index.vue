@@ -5,85 +5,24 @@
         <div class="header-top_content">
           <div class="header_head">
             <nuxt-link to="/search/">
-              <h1>Ramen App</h1>
+              <div class="header_head_img">
+                <img src="@/assets/img/ramen-app.png" />
+              </div>
             </nuxt-link>
           </div>
-          <div class="header-nav">
-            <input id="header-check" type="checkbox" class="header-hidden" />
-            <label for="header-check" class="header-open"><span></span></label>
-            <div class="header-content">
-              <div class="header-content_head">
-                <h1 style="font-size: 48px">Ramen App</h1>
-              </div>
-              <div class="header-content_item">
-                <div class="header-content_list">
-                  <ul>
-                    <nuxt-link to="../login/">
-                      <li>ログイン</li>
-                    </nuxt-link>
-                    <nuxt-link to="../resister/">
-                      <li>新規登録</li>
-                    </nuxt-link>
-                    <nuxt-link to="/question/">
-                      <li>よくある質問</li>
-                    </nuxt-link>
-                    <nuxt-link to="/form/">
-                      <li>お問い合わせ</li>
-                    </nuxt-link>
-                    <nuxt-link to="/terms/">
-                      <li>ご利用規約</li>
-                    </nuxt-link>
-                    <nuxt-link to="/privacy/">
-                      <li>プライバシーポリシー</li>
-                    </nuxt-link>
-                  </ul>
-                </div>
-              </div>
+          <div class="header-btn">
+            <div class="header-resister">
+              <nuxt-link to="/resister/">
+                <button type="button" class="header-resister-btn">
+                  新規登録
+                </button>
+              </nuxt-link>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="header-center">
-        <div class="header-center_content">
-          <div class="header-center_list">
-            <ul>
-              <div class="header-center_list_1">
-                <nuxt-link to="/login/">
-                  <li style="color: #fff">Login</li>
-                  <p style="color: #fff">ログイン</p>
-                </nuxt-link>
-              </div>
-              <div class="header-center_list_2">
-                <nuxt-link to="/resister/">
-                  <li style="color: #fff">Resister</li>
-                  <p style="color: #fff">新規登録</p>
-                </nuxt-link>
-              </div>
-              <div class="header-center_list_3">
-                <nuxt-link to="/question/">
-                  <li style="color: #fff">Question</li>
-                  <p style="color: #fff">よくある質問</p>
-                </nuxt-link>
-              </div>
-              <div class="header-center_list_4">
-                <nuxt-link to="/form/">
-                  <li style="color: #fff">Contact</li>
-                  <p style="color: #fff">お問い合わせ</p>
-                </nuxt-link>
-              </div>
-              <div class="header-center_list_5">
-                <nuxt-link to="/terms/">
-                  <li style="color: #fff">Terms</li>
-                  <p style="color: #fff">ご利用規約</p>
-                </nuxt-link>
-              </div>
-              <div class="header-center_list_6">
-                <nuxt-link to="/privacy/">
-                  <li style="color: #fff">Privacy</li>
-                  <p style="color: #fff">プライバシーポリシー</p>
-                </nuxt-link>
-              </div>
-            </ul>
+            <div class="header-login">
+              <nuxt-link to="/login/">
+                <button type="button" class="header-login-btn">ログイン</button>
+              </nuxt-link>
+            </div>
           </div>
         </div>
       </div>
@@ -108,52 +47,100 @@
         </div>
       </div>
     </header>
-    <div class="search_detail">
-      <div class="search_detail_head">
-        <h1 style="font-size: 32px">Ramen App とは ?</h1>
+    <div class="top-sample" style="background: #fff">
+      <div class="top-sample-image">
+        <img
+          src="https://www.illust-pocket.com/wp-content/uploads/2016/07/622.jpg"
+        />
+        <div class="top-sample_text">
+          <div class="top-sample_head">
+            <h1>Ramen App とは？</h1>
+          </div>
+          <div class="top-sample_text_content">
+            <p>
+              日本料理・イタリアン・フレンチ・韓国料理・居酒屋・焼き肉など多種多様な飲食店をお探しいただけるアプリであり、お客様の気希望のエリア・ジャンル・価格などあらゆる条件からお探しいただけるWebサービスとなっております！！
+            </p>
+          </div>
+          <div class="top-sample_img">
+            <div class="top-sample_img_1">
+              <img
+                src="https://3.bp.blogspot.com/-F7oSHYuIojM/VVGVc936rkI/AAAAAAAAtls/hAl1ihRSew4/s800/job_izakaya_man.png"
+              />
+            </div>
+            <div class="top-sample_img_2">
+              <img
+                src="https://2.bp.blogspot.com/-oQkczCTrfJg/UZB7gStqHlI/AAAAAAAASEU/vkvxHOCAb1M/s800/job_izakaya_beer.png"
+              />
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="search_detail_content">
-        <div class="search_detail_content_1">
-          <div class="search_detail_content_1_head">
-            <h1>1.<span>多種多様な飲食店</span></h1>
-          </div>
-          <div class="search_detail_content_1_img">
+    </div>
+    <div class="search-problem">
+      <div class="search-problem_head">
+        <h1>こんな悩みはありませんか？</h1>
+      </div>
+      <div class="search-problem_content">
+        <div class="search-problem_content_left">
+          <div class="search-problem_content_left_img">
             <img
-              src="https://img.retty.me/img_ebisu/restaurant/100000080178/archive/1875693-5f6d95f521703-l.png"
+              src="https://4.bp.blogspot.com/-MZRiDNtddqU/V_I4GNMYpqI/AAAAAAAA-mY/2Sw5eYtM4_oyOmO3kF0mdIKVl29Cuc9yACLcB/s800/businessman1_nayami.png"
+              alt=""
             />
           </div>
-          <div class="search_detail_content_1_description">
-            <p>
-              日本料理・イタリアン・フレンチ・韓国料理・居酒屋・焼き肉など多種多様な飲食店をお探しいただけます。
-            </p>
-          </div>
         </div>
-        <div class="search_detail_content_2">
-          <div class="search_detail_content_2_head">
-            <h1>2.<span>サクッと検索</span></h1>
-          </div>
-          <div class="search_detail_content_2_img">
-            <img src="https://tenpo.casio.jp/column_industry/images/071.png" />
-          </div>
-          <div class="search_detail_content_2_description">
-            <p>
-              ご希望のエリア・食のジャンル・予算などからお客様にとって最適な飲食店をご紹介させていただきます。
-            </p>
-          </div>
-        </div>
-        <div class="search_detail_content_3">
-          <div class="search_detail_content_3_head">
-            <h1>3.<span>SNSで情報収集が可能</span></h1>
-          </div>
-          <div class="search_detail_content_3_img">
-            <img
-              src="https://wink-jaken.com/wp-content/uploads/haru_main-w.png"
-            />
-          </div>
-          <div class="search_detail_content_3_description">
-            <p>
-              お店のホームページ・Instgram・Twitterなどからお店の雰囲気・メニューなどいろいろな情報を獲得できます。
-            </p>
+        <div class="search-problem_content_right">
+          <div class="search-problem_content_right_text">
+            <div class="search-problem_content_right_text_1">
+              <div class="search-problem_content_right_text_1_img">
+                <img
+                  src="https://chicodeza.com/wordpress/wp-content/uploads/retenn-illust31.png"
+                />
+              </div>
+              <div class="search-problem_content_right_text_1_text">
+                <h1>どのサービスで飲食店を探せばいいかわからない...</h1>
+              </div>
+            </div>
+            <div class="search-problem_content_right_text_2">
+              <div class="search-problem_content_right_text_2_img">
+                <img
+                  src="https://chicodeza.com/wordpress/wp-content/uploads/retenn-illust31.png"
+                />
+              </div>
+              <div class="search-problem_content_right_text_2_text">
+                <h1>時間がないけど飲食店が見つからない...</h1>
+              </div>
+            </div>
+            <div class="search-problem_content_right_text_3">
+              <div class="search-problem_content_right_text_3_img">
+                <img
+                  src="https://chicodeza.com/wordpress/wp-content/uploads/retenn-illust31.png"
+                />
+              </div>
+              <div class="search-problem_content_right_text_3_text">
+                <h1>ご希望の価格帯のお店が見つからない...</h1>
+              </div>
+            </div>
+            <div class="search-problem_content_right_text_4">
+              <div class="search-problem_content_right_text_4_img">
+                <img
+                  src="https://chicodeza.com/wordpress/wp-content/uploads/retenn-illust31.png"
+                />
+              </div>
+              <div class="search-problem_content_right_text_4_text">
+                <h1>周辺にどんなお店があるかわからない...</h1>
+              </div>
+            </div>
+            <div class="search-problem_content_right_text_5">
+              <div class="search-problem_content_right_text_5_img">
+                <img
+                  src="https://chicodeza.com/wordpress/wp-content/uploads/retenn-illust31.png"
+                />
+              </div>
+              <div class="search-problem_content_right_text_5_text">
+                <h1>お店のSNSを探すのに苦労している...</h1>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -170,7 +157,7 @@
           />
           <input
             type="text"
-            placeholder="店名・駅名・ジャンル"
+            placeholder="店名・駅名・ジャンル・等"
             class="search-free_form_text"
           />
         </div>
@@ -571,6 +558,14 @@ export default {
           this.shops = data.data.results.shop
         })
     },
+    next() {
+      this.onboarding =
+        this.onboarding + 1 === this.length ? 0 : this.onboarding + 1
+    },
+    prev() {
+      this.onboarding =
+        this.onboarding - 1 < 0 ? this.length - 1 : this.onboarding - 1
+    },
     setError(err) {
       console.log(err)
       this.error = true
@@ -617,11 +612,12 @@ export default {
   filter: brightness(120%);
 }
 .header-top_content {
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  padding: 5px 0;
+  align-items: center;
+  padding: 5px 0 8px 0;
 }
 .header-top {
   border-top: 4px solid #ff8e00;
@@ -630,6 +626,15 @@ export default {
 .header_head {
   display: flex;
   align-items: center;
+}
+.header_head_img {
+  width: 100%;
+  height: 100%;
+}
+.header_head_img img {
+  width: 500px;
+  height: 90px;
+  object-fit: cover;
 }
 .header_head h1 {
   letter-spacing: 3px;
@@ -689,7 +694,7 @@ export default {
   margin: 0 auto;
   padding: 40px 0 50px 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .header-bottom_content_left_head h1 {
   font-size: 32px;
@@ -972,6 +977,7 @@ export default {
   background-color: #c8c8c8;
   padding: 0 30px;
   margin: 30px 0;
+  box-shadow: 4px 4px 6px rgb(0 0 0 / 12%);
 }
 .search-free_list_content_item_parent p {
   width: 80%;
@@ -1210,5 +1216,198 @@ export default {
 }
 .v-application p {
   margin: 0;
+}
+.header-resister-btn {
+  border: 1px solid #ff8e00;
+  width: 150px;
+  color: #ff8e00;
+  padding: 8px;
+  border-radius: 30px;
+  margin: 0 10px;
+}
+.header-login-btn {
+  border: 1px solid #ff8e00;
+  width: 150px;
+  color: #ff8e00;
+  padding: 8px;
+  border-radius: 30px;
+  margin: 0 10px;
+}
+.header-btn {
+  display: flex;
+  justify-content: space-around;
+}
+
+.top-sample {
+  padding: 150px 0 100px 0;
+  width: 100%;
+}
+
+.top-sample-image {
+  text-align: center;
+}
+
+.top-sample-image img {
+  width: 80%;
+  height: 500px;
+}
+
+.top-sample_text {
+  color: #000;
+  max-width: 50%;
+  margin: 0 auto;
+  position: fixed;
+  top: 6.8%;
+  left: 24.6%;
+  line-height: 3;
+  letter-spacing: 3px;
+}
+.top-sample_img_1 {
+  position: fixed;
+  top: 6%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.top-sample_img_1 img {
+  width: 200px;
+  height: 180px;
+}
+.top-sample_img_2 {
+  position: fixed;
+  top: 6%;
+  right: 27%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.top-sample_img_2 img {
+  width: 200px;
+  height: 180px;
+}
+.top-sample_head h1 {
+  font-size: 36px;
+  font-weight: Normal;
+}
+.search-problem {
+  padding: 50px 0;
+  background-color: #ffb577;
+}
+.search-problem_head {
+  background-image: url(https://tsukatte.com/wp-content/uploads/2019/01/hatena.png);
+  background-size: contain;
+  background-position: center;
+  text-align: center;
+  padding: 100px 0;
+}
+.search-problem_head h1 {
+  color: #000;
+  font-size: 36px;
+  letter-spacing: 3px;
+  font-weight: Normal;
+}
+.search-problem_content {
+  display: flex;
+}
+.search-problem_content_left {
+  width: 50%;
+}
+.search-problem_content_left img {
+  width: 100%;
+  height: 500px;
+  object-fit: contain;
+}
+.search-problem_content_right {
+  width: 50%;
+}
+.search-problem_content_right_text_1 {
+  display: flex;
+  align-items: center;
+  padding: 30px 0;
+}
+.search-problem_content_right_text_1_img {
+  width: 50px;
+  height: 40px;
+}
+.search-problem_content_right_text_1_img img {
+  width: 100%;
+}
+.search-problem_content_right_text_1 h1 {
+  color: #000;
+  border-bottom: 2px solid #ff8e00;
+  margin-left: 5px;
+  font-weight: Normal;
+}
+.search-problem_content_right_text_2 {
+  display: flex;
+  align-items: center;
+  padding: 30px 0;
+}
+.search-problem_content_right_text_2_img {
+  width: 50px;
+  height: 40px;
+}
+.search-problem_content_right_text_2_img img {
+  width: 100%;
+}
+.search-problem_content_right_text_2 h1 {
+  color: #000;
+  border-bottom: 2px solid #ff8e00;
+  margin-left: 5px;
+  font-weight: Normal;
+}
+.search-problem_content_right_text_3 {
+  display: flex;
+  align-items: center;
+  padding: 30px 0;
+}
+.search-problem_content_right_text_3_img {
+  width: 50px;
+  height: 40px;
+}
+.search-problem_content_right_text_3_img img {
+  width: 100%;
+}
+.search-problem_content_right_text_3 h1 {
+  color: #000;
+  border-bottom: 2px solid #ff8e00;
+  margin-left: 5px;
+  font-weight: Normal;
+}
+.search-problem_content_right_text_4 {
+  display: flex;
+  align-items: center;
+  padding: 30px 0;
+}
+.search-problem_content_right_text_4_img {
+  width: 50px;
+  height: 40px;
+}
+.search-problem_content_right_text_4_img img {
+  width: 100%;
+}
+.search-problem_content_right_text_4 h1 {
+  color: #000;
+  border-bottom: 2px solid #ff8e00;
+  margin-left: 5px;
+  font-weight: Normal;
+}
+.search-problem_content_right_text_5 {
+  display: flex;
+  align-items: center;
+  padding: 30px 0;
+}
+.search-problem_content_right_text_5_img {
+  width: 50px;
+  height: 40px;
+}
+.search-problem_content_right_text_5_img img {
+  width: 100%;
+}
+.search-problem_content_right_text_5 h1 {
+  color: #000;
+  border-bottom: 2px solid #ff8e00;
+  margin-left: 5px;
+  font-weight: Normal;
 }
 </style>

@@ -1,34 +1,33 @@
 <template>
-  <v-parallax
-    dark
-    src="https://storage.googleapis.com/setouchikakuregaresorts-media/1/2020/11/s1.jpg"
-  >
-    <v-row align="center" justify="center">
-      <v-col class="text-center" cols="12">
-        <h1 class="display-1 font-weight-thin mb-4">Ramen App</h1>
-        <div class="my-2">
-          <nuxt-link to="/search/">
-            <div class="ramen-start">
-              <v-btn outlined color="indigo">START</v-btn>
-            </div>
-          </nuxt-link>
+  <div class="sample">
+    <div class="my-2">
+      <nuxt-link to="/search/">
+        <div class="ramen-start">
+          <v-btn outlined color="indigo" class="ramen-start_btn">START</v-btn>
         </div>
-      </v-col>
-    </v-row>
-  </v-parallax>
+      </nuxt-link>
+    </div>
+    <img src="@/assets/img/ramen-app.png" />
+  </div>
 </template>
 
 <style lang="scss" scoped>
-.v-parallax {
-  width: 100% !important;
-  height: 100% !important;
+.sample {
+  max-width: 100%;
+  text-align: center;
+  height: 100%;
+  background-color: #fff;
 }
+
 .font-weight-thin {
   color: #000;
   font-size: 64px !important;
 }
+
 .ramen-start {
-  padding: 30px 0;
+  position: fixed;
+  top: 60%;
+  width: 100%;
 }
 
 .v-application a {
