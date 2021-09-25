@@ -156,6 +156,7 @@
             class="search-free_icon"
           />
           <input
+            v-model="freeWord"
             type="text"
             placeholder="店名・駅名・ジャンル・等"
             class="search-free_form_text"
@@ -478,6 +479,7 @@ export default {
       dialog_4: false,
       dialog_5: false,
       show: false,
+      freeWord: '',
       items: [
         {
           src: 'https://tblg.k-img.com/resize/660x370c/restaurant/images/Rvw/97108/97108619.jpg?token=5adbb4a&api=v2',
@@ -546,10 +548,9 @@ export default {
     doSearch() {
       this.$axios
         .get(
-          `http://webservice.recruit.co.jp/hotpepper/gourmet/v1/?key=${process.env.API_URL}&large_area=Z011&format=json`,
+          `http://webservice.recruit.co.jp/hotpepper/gourmet/v1/?key=${process.env.API_URL}&keyword=${this.freeWord}`,
           {
             params: {
-              key: process.env.API_URL,
               format: 'json',
             },
           }
@@ -1266,7 +1267,7 @@ export default {
   position: fixed;
   top: 6%;
   width: 100%;
-  height: 100%;
+  // height: 100%;
   object-fit: cover;
 }
 .top-sample_img_1 img {
@@ -1278,7 +1279,7 @@ export default {
   top: 6%;
   right: 27%;
   width: 100%;
-  height: 100%;
+  // height: 100%;
   object-fit: cover;
 }
 .top-sample_img_2 img {
