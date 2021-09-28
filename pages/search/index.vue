@@ -30,126 +30,21 @@
         <div class="header-heading_img">
           <video src="@/assets/video/Ramen-App.mp4" loop autoplay muted></video>
         </div>
-        <div class="header-heading_topics">
-          <a href="http://localhost:3000/_nuxt/assets/img/ramen-topics.png">
-            <img src="@/assets/img/ramen-topics.png" />
-          </a>
-        </div>
       </div>
     </header>
-    <div class="search-problem">
-      <div class="search-problem_head">
-        <h1>こんな悩みはありませんか？</h1>
-      </div>
-      <div class="search-problem_content">
-        <div class="search-problem_content_left">
-          <div class="search-problem_content_left_img">
-            <img
-              src="https://4.bp.blogspot.com/-MZRiDNtddqU/V_I4GNMYpqI/AAAAAAAA-mY/2Sw5eYtM4_oyOmO3kF0mdIKVl29Cuc9yACLcB/s800/businessman1_nayami.png"
-              alt=""
-            />
-          </div>
+    <div class="search-about">
+      <div class="search-about_content">
+        <div class="search-about_head">
+          <h1>Ramen App とは ?</h1>
         </div>
-        <div class="search-problem_content_right">
-          <div class="search-problem_content_right_text">
-            <div class="search-problem_content_right_text_1">
-              <div class="search-problem_content_right_text_1_img">
-                <img
-                  src="https://chicodeza.com/wordpress/wp-content/uploads/retenn-illust31.png"
-                />
-              </div>
-              <div class="search-problem_content_right_text_1_text">
-                <h1>どのサービスで飲食店を探せばいいかわからない...</h1>
-              </div>
-            </div>
-            <div class="search-problem_content_right_text_2">
-              <div class="search-problem_content_right_text_2_img">
-                <img
-                  src="https://chicodeza.com/wordpress/wp-content/uploads/retenn-illust31.png"
-                />
-              </div>
-              <div class="search-problem_content_right_text_2_text">
-                <h1>時間がないけど飲食店が見つからない...</h1>
-              </div>
-            </div>
-            <div class="search-problem_content_right_text_3">
-              <div class="search-problem_content_right_text_3_img">
-                <img
-                  src="https://chicodeza.com/wordpress/wp-content/uploads/retenn-illust31.png"
-                />
-              </div>
-              <div class="search-problem_content_right_text_3_text">
-                <h1>ご希望の価格帯のお店が見つからない...</h1>
-              </div>
-            </div>
-            <div class="search-problem_content_right_text_4">
-              <div class="search-problem_content_right_text_4_img">
-                <img
-                  src="https://chicodeza.com/wordpress/wp-content/uploads/retenn-illust31.png"
-                />
-              </div>
-              <div class="search-problem_content_right_text_4_text">
-                <h1>周辺にどんなお店があるかわからない...</h1>
-              </div>
-            </div>
-            <div class="search-problem_content_right_text_5">
-              <div class="search-problem_content_right_text_5_img">
-                <img
-                  src="https://chicodeza.com/wordpress/wp-content/uploads/retenn-illust31.png"
-                />
-              </div>
-              <div class="search-problem_content_right_text_5_text">
-                <h1>お店のSNSを探すのに苦労している...</h1>
-              </div>
-            </div>
-          </div>
+        <div class="search-about_text">
+          <p>
+            飲食店探しにぴったり!!!多種多様な飲食店から自分にマッチした飲食店を探すことができるWebサービス!!!
+          </p>
         </div>
       </div>
-    </div>
-    <div class="search-solution">
-      <div class="search-solution_head">
-        <h1>そんな人にRamen App です！</h1>
-      </div>
-      <div class="search-solution_content">
-        <div class="search-solution_content_1">
-          <div class="search-solution_content_1_head">
-            <h1>フリーワード検索で探せる</h1>
-          </div>
-          <div class="search-solution_content_1_img">
-            <img src="@/assets/img/computer_search_kensaku.png" />
-          </div>
-          <div class="search-solution_content_1_text">
-            <p>
-              お客様がご希望の条件をフォームにご記入いただくことで飲食店を検索することができます。
-            </p>
-          </div>
-        </div>
-        <div class="search-solution_content_2">
-          <div class="search-solution_content_2_head">
-            <h1>幅広い飲食店が見つかる</h1>
-          </div>
-          <div class="search-solution_content_2_img">
-            <img src="@/assets/img/shop_ninki.png" />
-          </div>
-          <div class="search-solution_content_2_text">
-            <p>
-              日本料理・中華料理・フレンチ・イタリアン・韓国料理など幅広い飲食店を見つけることができます。
-            </p>
-          </div>
-        </div>
-        <div class="search-solution_content_3">
-          <div class="search-solution_content_3_head">
-            <h1>飲食店までの距離がわかる</h1>
-          </div>
-          <div class="search-solution_content_3_img">
-            <img src="@/assets/img/car_gps.png" />
-          </div>
-          <div class="search-solution_content_3_text">
-            <p>
-              お客様の現在位置を取得しご希望のお店までの距離を正確に知ることができます
-            </p>
-          </div>
-        </div>
+      <div class="search-problem text-center">
+        <h1>飲食店探しで悩んだことはありませんか？</h1>
       </div>
     </div>
     <div class="search-free">
@@ -393,7 +288,6 @@ export default {
   align-items: center;
 }
 .header-top {
-  border-top: 4px solid #ff8e00;
   background-color: #fff;
 }
 .header_head {
@@ -406,7 +300,7 @@ export default {
 }
 .header_head_img img {
   width: 200px;
-  height: 150px;
+  height: 180px;
   object-fit: contain;
 }
 .header_head h1 {
@@ -431,17 +325,66 @@ export default {
   height: 100%;
   object-fit: contain;
 }
-.header-heading_topics {
-  position: fixed;
-  top: 5.8%;
-  left: -6%;
-  width: 450px;
-  height: 450px;
+.search-about {
+  background-color: #ffac6a;
+  padding: 100px;
 }
-.header-heading_topics img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+.search-about_content {
+  padding: 10px 0;
+  max-width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  border: 5px dotted #ff8e00;
+  background-color: #fff;
+  color: #ffac6a;
+}
+.search-about_head {
+  width: 70%;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+.search-about_head h1 {
+  letter-spacing: 3px;
+  font-weight: Normal;
+  font-size: 36px;
+}
+.search-about_text {
+  width: 70%;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+.search-about_text p {
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.search-problem {
+  margin: 10% 0;
+  font-size: 1.5rem;
+  position: relative;
+  font-weight: bold;
+  text-shadow: 0 0 2px white;
+  background-color: #ffac6a;
+  z-index: 1;
+}
+.search-problem h1 {
+  font-weight: Normal;
+  letter-spacing: 3px;
+}
+.search-problem:after {
+  content: '';
+  position: absolute;
+  background: #ff8e00;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+.search-problem.text-center {
+  text-align: center !important;
 }
 .search-top_head h1 {
   text-align: center;
@@ -514,7 +457,7 @@ export default {
   color: #000;
 }
 .search-free {
-  background-color: #fff;
+  background-color: #c8c8c8;
   color: #000;
 }
 .search-free_content {
@@ -646,250 +589,5 @@ export default {
 .header-btn {
   display: flex;
   justify-content: space-around;
-}
-.search-problem {
-  padding: 50px 0;
-  background-color: #ffb577;
-}
-.search-problem_head {
-  background-image: url(https://tsukatte.com/wp-content/uploads/2019/01/hatena.png);
-  background-size: contain;
-  background-position: center;
-  text-align: center;
-  padding: 100px 0;
-}
-.search-problem_head h1 {
-  color: #000;
-  font-size: 36px;
-  letter-spacing: 3px;
-  font-weight: Normal;
-}
-.search-problem_content {
-  display: flex;
-}
-.search-problem_content_left {
-  width: 50%;
-}
-.search-problem_content_left img {
-  width: 100%;
-  height: 500px;
-  object-fit: contain;
-}
-.search-problem_content_right {
-  width: 50%;
-}
-.search-problem_content_right_text_1 {
-  display: flex;
-  align-items: center;
-  padding: 30px 0;
-}
-.search-problem_content_right_text_1_img {
-  width: 50px;
-  height: 40px;
-}
-.search-problem_content_right_text_1_img img {
-  width: 100%;
-}
-.search-problem_content_right_text_1 h1 {
-  color: #000;
-  border-bottom: 2px solid #ff8e00;
-  margin-left: 5px;
-  font-weight: Normal;
-}
-.search-problem_content_right_text_2 {
-  display: flex;
-  align-items: center;
-  padding: 30px 0;
-}
-.search-problem_content_right_text_2_img {
-  width: 50px;
-  height: 40px;
-}
-.search-problem_content_right_text_2_img img {
-  width: 100%;
-}
-.search-problem_content_right_text_2 h1 {
-  color: #000;
-  border-bottom: 2px solid #ff8e00;
-  margin-left: 5px;
-  font-weight: Normal;
-}
-.search-problem_content_right_text_3 {
-  display: flex;
-  align-items: center;
-  padding: 30px 0;
-}
-.search-problem_content_right_text_3_img {
-  width: 50px;
-  height: 40px;
-}
-.search-problem_content_right_text_3_img img {
-  width: 100%;
-}
-.search-problem_content_right_text_3 h1 {
-  color: #000;
-  border-bottom: 2px solid #ff8e00;
-  margin-left: 5px;
-  font-weight: Normal;
-}
-.search-problem_content_right_text_4 {
-  display: flex;
-  align-items: center;
-  padding: 30px 0;
-}
-.search-problem_content_right_text_4_img {
-  width: 50px;
-  height: 40px;
-}
-.search-problem_content_right_text_4_img img {
-  width: 100%;
-}
-.search-problem_content_right_text_4 h1 {
-  color: #000;
-  border-bottom: 2px solid #ff8e00;
-  margin-left: 5px;
-  font-weight: Normal;
-}
-.search-problem_content_right_text_5 {
-  display: flex;
-  align-items: center;
-  padding: 30px 0;
-}
-.search-problem_content_right_text_5_img {
-  width: 50px;
-  height: 40px;
-}
-.search-problem_content_right_text_5_img img {
-  width: 100%;
-}
-.search-problem_content_right_text_5 h1 {
-  color: #000;
-  border-bottom: 2px solid #ff8e00;
-  margin-left: 5px;
-  font-weight: Normal;
-}
-.search-solution {
-  background-color: #ffb577;
-  padding: 0 0 50px 0;
-}
-.search-solution_head {
-  text-align: center;
-  padding: 100px 0 50px 0;
-}
-.search-solution_head h1 {
-  color: #000;
-  font-size: 36px;
-  letter-spacing: 3px;
-  font-weight: lighter;
-}
-.search-solution_content {
-  display: flex;
-  max-width: 90%;
-  margin: 0 auto;
-}
-.search-solution_content_1 {
-  width: 100%;
-  text-align: center;
-  background-color: #fff;
-  padding: 50px 0;
-  box-shadow: 2px 2px 4px rgb(0 0 0 / 15%);
-  margin: 30px 15px;
-}
-.search-solution_content_1_head {
-  padding: 8px 0;
-}
-.search-solution_content_1_head h1 {
-  color: #000;
-  font-size: 24px;
-  letter-spacing: 3px;
-  font-weight: Normal;
-}
-.search-solution_content_1_img {
-  height: 200px;
-}
-.search-solution_content_1_img img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-.search-solution_content_1_text {
-  width: 80%;
-  margin: 0 auto;
-  padding: 10px 0;
-}
-.search-solution_content_1_text p {
-  color: #000;
-  letter-spacing: 3px;
-  font-weight: Normal;
-}
-.search-solution_content_2 {
-  width: 100%;
-  text-align: center;
-  background-color: #fff;
-  padding: 50px 0;
-  box-shadow: 2px 2px 4px rgb(0 0 0 / 15%);
-  margin: 30px 15px;
-}
-.search-solution_content_2_head {
-  padding: 8px 0;
-}
-.search-solution_content_2_head h1 {
-  color: #000;
-  font-size: 24px;
-  letter-spacing: 3px;
-  font-weight: Normal;
-}
-.search-solution_content_2_img {
-  height: 200px;
-}
-.search-solution_content_2_img img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-.search-solution_content_2_text {
-  width: 80%;
-  margin: 0 auto;
-  padding: 10px 0;
-}
-.search-solution_content_2_text p {
-  color: #000;
-  letter-spacing: 3px;
-  font-weight: Normal;
-}
-.search-solution_content_3 {
-  width: 100%;
-  text-align: center;
-  background-color: #fff;
-  padding: 50px 0;
-  box-shadow: 2px 2px 4px rgb(0 0 0 / 15%);
-  margin: 30px 15px;
-}
-.search-solution_content_3_head {
-  padding: 8px 0;
-}
-.search-solution_content_3_head h1 {
-  color: #000;
-  font-size: 24px;
-  letter-spacing: 3px;
-  font-weight: Normal;
-}
-.search-solution_content_3_img {
-  height: 200px;
-}
-.search-solution_content_3_img img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-.search-solution_content_3_text {
-  width: 80%;
-  margin: 0 auto;
-  padding: 10px 0;
-}
-.search-solution_content_3_text p {
-  color: #000;
-  letter-spacing: 3px;
-  font-weight: Normal;
 }
 </style>
