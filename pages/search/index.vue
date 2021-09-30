@@ -47,6 +47,141 @@
         <h1>飲食店探しで悩んだことはありませんか？</h1>
       </div>
     </div>
+    <div class="search-problem_content">
+      <div class="search-problem_content_left">
+        <div class="search-problem_content_left_img">
+          <img
+            src="@/assets/img/ramen-topics.png"
+            class="search-problem_content_left_img_item"
+          />
+        </div>
+      </div>
+      <div class="search-problem_content_right">
+        <div class="search-problem_content_right_1">
+          <div class="search-problem_content_right_1_img">
+            <img src="@/assets/img/retenn-illust31.png" alt="" />
+          </div>
+          <div class="search-problem_content_right_1_text">
+            <ul>
+              <li>どのサービスで飲食店を探せばいいかわからない...</li>
+            </ul>
+          </div>
+        </div>
+        <div class="search-problem_content_right_2">
+          <div class="search-problem_content_right_2_img">
+            <img src="@/assets/img/retenn-illust31.png" alt="" />
+          </div>
+          <div class="search-problem_content_right_2_text">
+            <ul>
+              <li>時間がないのに飲食店が見つからない...</li>
+            </ul>
+          </div>
+        </div>
+        <div class="search-problem_content_right_3">
+          <div class="search-problem_content_right_3_img">
+            <img src="@/assets/img/retenn-illust31.png" alt="" />
+          </div>
+          <div class="search-problem_content_right_3_text">
+            <ul>
+              <li>希望の価格帯のお店が見つからない...</li>
+            </ul>
+          </div>
+        </div>
+        <div class="search-problem_content_right_4">
+          <div class="search-problem_content_right_4_img">
+            <img src="@/assets/img/retenn-illust31.png" alt="" />
+          </div>
+          <div class="search-problem_content_right_4_text">
+            <ul>
+              <li>周辺にどんなお店があるかわからない...</li>
+            </ul>
+          </div>
+        </div>
+        <div class="search-problem_content_right_5">
+          <div class="search-problem_content_right_5_img">
+            <img src="@/assets/img/retenn-illust31.png" alt="" />
+          </div>
+          <div class="search-problem_content_right_5_text">
+            <ul>
+              <li>お店の詳細情報が記載されていない...</li>
+            </ul>
+          </div>
+        </div>
+        <div class="search-problem_content_right_6">
+          <div class="search-problem_content_right_6_img">
+            <img src="@/assets/img/retenn-illust31.png" alt="" />
+          </div>
+          <div class="search-problem_content_right_6_text">
+            <ul>
+              <li>地方でも使えるサービスが存在しない...</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="search-solution">
+      <div class="search-solution_head">
+        <h1>そんな人にはRamen Appを!!!</h1>
+      </div>
+      <div class="search-solution_content">
+        <div class="search-solution_content_1">
+          <div class="search-solution_content_1_head">
+            <h1>多種多様な飲食店</h1>
+          </div>
+          <div class="search-solution_content_1_img">
+            <img src="@/assets/img/computer_search_kensaku.png" alt="" />
+          </div>
+          <div class="search-solution_content_1_text">
+            <p class="text-justify">
+              Ramen
+              Appでは日本料理・韓国料理・イタリアン・フレンチ・中華料理などを多種多様な飲食店を見つけることができます
+            </p>
+          </div>
+        </div>
+        <div class="search-solution_content_2">
+          <div class="search-solution_content_2_head">
+            <h1>現在位置から探せる</h1>
+          </div>
+          <div class="search-solution_content_2_img">
+            <img src="@/assets/img/computer_search_kensaku.png" alt="" />
+          </div>
+          <div class="search-solution_content_2_text">
+            <p class="text-justify">
+              Ramen
+              Appでは現在自分がいる位置からお近くにある飲食店を見つけることができ飲食店までの距離も知ることができます。
+            </p>
+          </div>
+        </div>
+        <div class="search-solution_content_3">
+          <div class="search-solution_content_3_head">
+            <h1>詳細情報が見れる</h1>
+          </div>
+          <div class="search-solution_content_3_img">
+            <img src="@/assets/img/computer_search_kensaku.png" alt="" />
+          </div>
+          <div class="search-solution_content_3_text">
+            <p class="text-justify">
+              Ramen
+              Appでは検索したお店の営業時間・電話番号・アクセスなどそのほかにもたくさんお店の詳細情報を知ることができます。
+            </p>
+          </div>
+        </div>
+        <div class="search-solution_content_4">
+          <div class="search-solution_content_4_head">
+            <h1>価格帯が見れる</h1>
+          </div>
+          <div class="search-solution_content_4_img">
+            <img src="@/assets/img/computer_search_kensaku.png" alt="" />
+          </div>
+          <div class="search-solution_content_4_text">
+            <p class="text-justify">
+              Ramen
+              Appではディナーの平均予算やお通し代に関する情報など予算に関する情報も詳しく知ることができます。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="search-free">
       <div class="search-free_content">
         <div class="search-free_head">
@@ -91,34 +226,63 @@
       </div>
     </div>
     <footer class="footer">
-      <div class="footer-top">
-        <div class="footer-top_content">
-          <ul class="footer-top_content_list">
-            <nuxt-link to="/login">
-              <li>ログイン</li>
-            </nuxt-link>
-            <nuxt-link to="/resister">
-              <li>新規登録</li>
-            </nuxt-link>
-            <nuxt-link to="/question">
-              <li>よくある質問</li>
-            </nuxt-link>
-            <nuxt-link to="/form">
-              <li>お問い合わせ</li>
-            </nuxt-link>
-            <nuxt-link to="/terms">
-              <li>ご利用規約</li>
-            </nuxt-link>
-            <nuxt-link to="/privacy">
-              <li>プライバシーポリシー</li>
-            </nuxt-link>
-          </ul>
+      <div class="footer-content">
+        <div class="footer-top">
+          <div class="footer-top_left">
+            <div class="footer-top_logo">
+              <img src="@/assets/img/sample-header.png" alt="" />
+            </div>
+          </div>
+          <div class="footer-top_right">
+            <div class="footer-top_right_content">
+              <div class="footer-top_right_content_1">
+                <div class="footer-top_right_content_1_list">
+                  <p>
+                    <nuxt-link to="/resister/"> 新規登録 </nuxt-link>
+                  </p>
+                </div>
+                <div class="footer-top_right_content_1_img">
+                  <img src="@/assets/img/footer-arrow.png" alt="" />
+                </div>
+              </div>
+              <div class="footer-top_right_content_2">
+                <div class="footer-top_right_content_2_list">
+                  <p>
+                    <nuxt-link to="/login/"> ログイン </nuxt-link>
+                  </p>
+                </div>
+                <div class="footer-top_right_content_2_img">
+                  <img src="@/assets/img/footer-arrow.png" alt="" />
+                </div>
+              </div>
+              <div class="footer-top_right_content_3">
+                <div class="footer-top_right_content_3_list">
+                  <p>
+                    <nuxt-link to="/terms/"> ご利用規約 </nuxt-link>
+                  </p>
+                </div>
+                <div class="footer-top_right_content_3_img">
+                  <img src="@/assets/img/footer-arrow.png" alt="" />
+                </div>
+              </div>
+              <div class="footer-top_right_content_4">
+                <div class="footer-top_right_content_4_list">
+                  <p>
+                    <nuxt-link to="/privacy/"> プライバシーポリシー </nuxt-link>
+                  </p>
+                </div>
+                <div class="footer-top_right_content_4_img">
+                  <img src="@/assets/img/footer-arrow.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="footer-bottom">
-        <div class="footer-bottom_content">
-          <div class="footer-bottom_head">
-            <p>Copyright © 2021 Ramen App All Rights Reserved.</p>
+        <div class="footer-bottom">
+          <div class="footer-bottom_content">
+            <div class="footer-bottom_copyright">
+              <p>Copyright © 2021 Ramen App All Rights Reserved.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -141,57 +305,11 @@ export default {
       error: false,
       latitude: 0,
       longitude: 0,
-      dialog_1: false,
-      dialog_2: false,
-      dialog_3: false,
-      dialog_4: false,
-      dialog_5: false,
       show: false,
       freeWord: '',
-      items: [
-        {
-          src: 'https://tblg.k-img.com/resize/660x370c/restaurant/images/Rvw/97108/97108619.jpg?token=5adbb4a&api=v2',
-        },
-        {
-          src: 'https://tblg.k-img.com/resize/660x370c/restaurant/images/Rvw/97108/97108626.jpg?token=158d2b9&api=v2',
-        },
-        {
-          src: 'https://tblg.k-img.com/resize/660x370c/restaurant/images/Rvw/97108/97108611.jpg?token=3281343&api=v2',
-        },
-      ],
-      imgs_1: [
-        {
-          src: 'https://d340eiag32bpum.cloudfront.net/img/post/spot/523/52231-3kTTEsD4tY1V0mE1zuuV_lrg_re.jpg',
-        },
-        {
-          src: 'https://tblg.k-img.com/restaurant/images/Rvw/141506/640x640_rect_141506127.jpg',
-        },
-        {
-          src: 'https://rimage.hitosara.com/gg/image/0020000935/0020000935F35_551x413y.jpg?t=1624005875',
-        },
-      ],
-      imgs_2: [
-        {
-          src: 'https://imgfp.hotp.jp/IMGH/09/21/P038020921/P038020921_480.jpg',
-        },
-        {
-          src: 'https://tblg.k-img.com/restaurant/images/Rvw/155629/320x320_square_155629378.jpg',
-        },
-        {
-          src: 'https://rimage.gnst.jp/rest/img/84ha239b0000/s_0n5v.jpg?t=1627902302',
-        },
-      ],
-      imgs_3: [
-        {
-          src: 'https://imgfp.hotp.jp/IMGH/24/32/P036322432/P036322432_480.jpg',
-        },
-        {
-          src: 'https://tblg.k-img.com/restaurant/images/Rvw/125507/640x640_rect_125507695.jpg',
-        },
-        {
-          src: 'https://imgfp.hotp.jp/IMGH/83/60/P030798360/P030798360_480.jpg',
-        },
-      ],
+      items_1: ['Foo', 'Bar', 'Fizz', 'Buzz'],
+      items_2: ['aaa', 'bbb', 'ccc', 'ddd'],
+      items_3: ['eee', 'fff', 'ggg', 'hhh'],
     }
   },
   mounted() {
@@ -226,14 +344,6 @@ export default {
         .then((data) => {
           this.shops = data.data.results.shop
         })
-    },
-    next() {
-      this.onboarding =
-        this.onboarding + 1 === this.length ? 0 : this.onboarding + 1
-    },
-    prev() {
-      this.onboarding =
-        this.onboarding - 1 < 0 ? this.length - 1 : this.onboarding - 1
     },
     setError(err) {
       console.log(err)
@@ -279,6 +389,26 @@ export default {
 <style lang="scss" scoped>
 .search-top {
   filter: brightness(120%);
+}
+.header-resister-btn {
+  border: 1px solid #ff8e00;
+  width: 150px;
+  color: #ff8e00;
+  padding: 8px;
+  border-radius: 30px;
+  margin: 0 10px;
+}
+.header-login-btn {
+  border: 1px solid #ff8e00;
+  width: 150px;
+  color: #ff8e00;
+  padding: 8px;
+  border-radius: 30px;
+  margin: 0 10px;
+}
+.header-btn {
+  display: flex;
+  justify-content: space-around;
 }
 .header-top_content {
   width: 90%;
@@ -330,7 +460,7 @@ export default {
   padding: 100px;
 }
 .search-about_content {
-  padding: 10px 0;
+  padding: 15px 0;
   max-width: 70%;
   margin: 0 auto;
   text-align: center;
@@ -351,12 +481,12 @@ export default {
 .search-about_text {
   width: 70%;
   margin: 0 auto;
-  padding: 15px 0;
+  padding: 0 0 15px 0;
 }
 .search-about_text p {
   letter-spacing: 3px;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
 }
 .search-problem {
   margin: 10% 0;
@@ -385,6 +515,358 @@ export default {
 }
 .search-problem.text-center {
   text-align: center !important;
+}
+.search-problem_content {
+  display: flex;
+}
+.search-problem_content_left {
+  width: 50%;
+  background-color: #ff9046;
+}
+.search-problem_content_left_img {
+  -webkit-box-flex: 0;
+  flex: 0 0 50%;
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  object-fit: contain;
+}
+.search-problem_content_left_img img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.search-problem_content_left_img_item {
+  width: 80%;
+  padding: 5%;
+}
+.search-problem_content_right {
+  width: 50%;
+  background-color: #fff;
+  color: #000;
+  padding: 30px;
+}
+.search-problem_content_right_1 {
+  width: 100%;
+  line-height: 3;
+  padding: 20px 0;
+  display: flex;
+}
+.search-problem_content_right_1_img {
+  width: 50px;
+  height: 40px;
+}
+.search-problem_content_right_1_img img {
+  width: 100%;
+}
+.search-problem_content_right_1_text {
+  display: flex;
+  align-items: center;
+}
+.search-problem_content_right_1 ul {
+  padding-left: 10px;
+  list-style: none;
+}
+.search-problem_content_right_1 ul li {
+  font-size: 18px;
+  letter-spacing: 4px;
+  font-weight: bold;
+}
+.search-problem_content_right_2 {
+  width: 100%;
+  line-height: 3;
+  display: flex;
+  padding: 20px 0;
+}
+.search-problem_content_right_2_img {
+  width: 50px;
+  height: 40px;
+}
+.search-problem_content_right_2_img img {
+  width: 100%;
+}
+.search-problem_content_right_2_text {
+  display: flex;
+  align-items: center;
+}
+.search-problem_content_right_2 ul {
+  list-style: none;
+  padding-left: 10px;
+}
+.search-problem_content_right_2 ul li {
+  font-size: 18px;
+  letter-spacing: 4px;
+  font-weight: bold;
+}
+.search-problem_content_right_3 {
+  width: 100%;
+  line-height: 3;
+  display: flex;
+  padding: 20px 0;
+}
+.search-problem_content_right_3_img {
+  width: 50px;
+  height: 40px;
+}
+.search-problem_content_right_3_img img {
+  width: 100%;
+}
+.search-problem_content_right_3_text {
+  display: flex;
+  align-items: center;
+}
+.search-problem_content_right_3 ul {
+  list-style: none;
+  padding-left: 10px;
+}
+.search-problem_content_right_3 ul li {
+  font-size: 18px;
+  letter-spacing: 4px;
+  font-weight: bold;
+}
+.search-problem_content_right_4 {
+  width: 100%;
+  line-height: 3;
+  display: flex;
+  padding: 20px 0;
+}
+.search-problem_content_right_4_img {
+  width: 50px;
+  height: 40px;
+}
+.search-problem_content_right_4_img img {
+  width: 100%;
+}
+.search-problem_content_right_4_text {
+  display: flex;
+  align-items: center;
+}
+.search-problem_content_right_4 ul {
+  list-style: none;
+  padding-left: 10px;
+}
+.search-problem_content_right_4 ul li {
+  font-size: 18px;
+  letter-spacing: 4px;
+  font-weight: bold;
+}
+.search-problem_content_right_5 {
+  width: 100%;
+  line-height: 3;
+  display: flex;
+  padding: 20px 0;
+}
+.search-problem_content_right_5_img {
+  width: 50px;
+  height: 40px;
+}
+.search-problem_content_right_5_img img {
+  width: 100%;
+}
+.search-problem_content_right_5_text {
+  display: flex;
+  align-items: center;
+}
+.search-problem_content_right_5 ul {
+  list-style: none;
+  padding-left: 10px;
+}
+.search-problem_content_right_5 ul li {
+  font-size: 18px;
+  letter-spacing: 4px;
+  font-weight: bold;
+}
+.search-problem_content_right_6 {
+  width: 100%;
+  line-height: 3;
+  display: flex;
+  padding: 20px 0;
+}
+.search-problem_content_right_6_img {
+  width: 50px;
+  height: 40px;
+}
+.search-problem_content_right_6_img img {
+  width: 100%;
+}
+.search-problem_content_right_6_text {
+  display: flex;
+  align-items: center;
+}
+.search-problem_content_right_6 ul {
+  list-style: none;
+  padding-left: 10px;
+}
+.search-problem_content_right_6 ul li {
+  font-size: 18px;
+  letter-spacing: 4px;
+  font-weight: bold;
+}
+.search-solution {
+  background-color: #ffac6a;
+  color: #fff;
+}
+.search-solution_head {
+  max-width: 46%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 75px 0;
+}
+.search-solution_head h1 {
+  letter-spacing: 3px;
+  font-size: 36px;
+  font-weight: Normal;
+  padding: 0 0 10px 0;
+}
+.search-solution_content {
+  display: flex;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 30px 0 100px 0;
+}
+.search-solution_content_1 {
+  width: 25%;
+  text-align: center;
+  padding: 30px;
+  background-color: #fff;
+  color: #000;
+  margin: 0 15px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+}
+.search-solution_content_1_head {
+  width: 100%;
+}
+.search-solution_content_1_head h1 {
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 24px;
+}
+.search-solution_content_1_img {
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+.search-solution_content_1_img img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+}
+.search-solution_content_1_text {
+  width: 100%;
+  margin: 0 auto;
+}
+.search-solution_content_1_text p {
+  font-size: 18px;
+  letter-spacing: 3px;
+  line-height: 2;
+}
+.search-solution_content_2 {
+  width: 25%;
+  text-align: center;
+  padding: 30px;
+  background-color: #fff;
+  color: #000;
+  margin: 0 15px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+}
+.search-solution_content_2_head {
+  width: 100%;
+}
+.search-solution_content_2_head h1 {
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 24px;
+}
+.search-solution_content_2_img {
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+.search-solution_content_2_img img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+}
+.search-solution_content_2_text {
+  width: 100%;
+  margin: 0 auto;
+}
+.search-solution_content_2_text p {
+  font-size: 18px;
+  letter-spacing: 3px;
+  line-height: 2;
+}
+.search-solution_content_3 {
+  width: 25%;
+  text-align: center;
+  padding: 30px;
+  background-color: #fff;
+  color: #000;
+  margin: 0 15px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+}
+.search-solution_content_3_head {
+  width: 100%;
+}
+.search-solution_content_3_head h1 {
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 24px;
+}
+.search-solution_content_3_img {
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+.search-solution_content_3_img img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+}
+.search-solution_content_3_text {
+  width: 100%;
+  margin: 0 auto;
+}
+.search-solution_content_3_text p {
+  font-size: 18px;
+  letter-spacing: 3px;
+  line-height: 2;
+}
+.search-solution_content_4 {
+  width: 25%;
+  text-align: center;
+  padding: 30px;
+  background-color: #fff;
+  color: #000;
+  margin: 0 15px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+}
+.search-solution_content_4_head {
+  width: 100%;
+}
+.search-solution_content_4_head h1 {
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 24px;
+}
+.search-solution_content_4_img {
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+.search-solution_content_4_img img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+}
+.search-solution_content_4_text {
+  width: 100%;
+  margin: 0 auto;
+}
+.search-solution_content_4_text p {
+  font-size: 18px;
+  letter-spacing: 3px;
+  line-height: 2;
 }
 .search-top_head h1 {
   text-align: center;
@@ -457,7 +939,7 @@ export default {
   color: #000;
 }
 .search-free {
-  background-color: #c8c8c8;
+  background-color: #fff;
   color: #000;
 }
 .search-free_content {
@@ -536,58 +1018,49 @@ export default {
 .theme--dark.v-application {
   background: #fff !important;
 }
+.footer {
+  width: 100%;
+}
 .footer-top {
-  background-color: #ff8e00;
-}
-.footer-top_content {
-  width: 80%;
-  margin: 0 auto;
-  padding: 30px;
-}
-.footer-top_content_list {
+  width: 100%;
   display: flex;
-  list-style: none;
 }
-.footer-top_content_list a {
-  width: 20%;
-  text-decoration: none;
-  color: #fff;
+.footer-top_left {
+  width: 30%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-top_logo {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+.footer-top_logo img {
+  width: 100%;
+  height: 100%;
+}
+.footer-top_right {
+  width: 70%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-top_right_content {
+  width: 100%;
 }
 .footer-bottom {
-  background-color: #fff;
-}
-.footer-bottom_content {
-  width: 80%;
-  margin: 0 auto;
-}
-.footer-bottom_head {
-  text-align: center;
-  padding: 30px 0;
-}
-.footer-bottom_head p {
-  color: #000;
+  background-color: #ffac6a;
 }
 .v-application p {
   margin: 0;
 }
-.header-resister-btn {
-  border: 1px solid #ff8e00;
-  width: 150px;
-  color: #ff8e00;
-  padding: 8px;
-  border-radius: 30px;
-  margin: 0 10px;
-}
-.header-login-btn {
-  border: 1px solid #ff8e00;
-  width: 150px;
-  color: #ff8e00;
-  padding: 8px;
-  border-radius: 30px;
-  margin: 0 10px;
-}
-.header-btn {
+.footer-bottom_content {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
 }
 </style>

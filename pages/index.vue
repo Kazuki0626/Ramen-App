@@ -26,7 +26,7 @@
 
 .ramen-start {
   position: fixed;
-  top: 60%;
+  top: 50%;
   width: 100%;
 }
 
