@@ -236,43 +236,43 @@
           <div class="footer-top_right">
             <div class="footer-top_right_content">
               <div class="footer-top_right_content_1">
+                <div class="footer-top_right_content_1_img">
+                  <img src="@/assets/img/footer-arrow.png" alt="" />
+                </div>
                 <div class="footer-top_right_content_1_list">
                   <p>
                     <nuxt-link to="/resister/"> 新規登録 </nuxt-link>
                   </p>
                 </div>
-                <div class="footer-top_right_content_1_img">
-                  <img src="@/assets/img/footer-arrow.png" alt="" />
-                </div>
               </div>
               <div class="footer-top_right_content_2">
+                <div class="footer-top_right_content_2_img">
+                  <img src="@/assets/img/footer-arrow.png" alt="" />
+                </div>
                 <div class="footer-top_right_content_2_list">
                   <p>
                     <nuxt-link to="/login/"> ログイン </nuxt-link>
                   </p>
                 </div>
-                <div class="footer-top_right_content_2_img">
-                  <img src="@/assets/img/footer-arrow.png" alt="" />
-                </div>
               </div>
               <div class="footer-top_right_content_3">
+                <div class="footer-top_right_content_3_img">
+                  <img src="@/assets/img/footer-arrow.png" alt="" />
+                </div>
                 <div class="footer-top_right_content_3_list">
                   <p>
                     <nuxt-link to="/terms/"> ご利用規約 </nuxt-link>
                   </p>
                 </div>
-                <div class="footer-top_right_content_3_img">
-                  <img src="@/assets/img/footer-arrow.png" alt="" />
-                </div>
               </div>
               <div class="footer-top_right_content_4">
+                <div class="footer-top_right_content_4_img">
+                  <img src="@/assets/img/footer-arrow.png" alt="" />
+                </div>
                 <div class="footer-top_right_content_4_list">
                   <p>
                     <nuxt-link to="/privacy/"> プライバシーポリシー </nuxt-link>
                   </p>
-                </div>
-                <div class="footer-top_right_content_4_img">
-                  <img src="@/assets/img/footer-arrow.png" alt="" />
                 </div>
               </div>
             </div>
@@ -1026,7 +1026,7 @@ export default {
   display: flex;
 }
 .footer-top_left {
-  width: 30%;
+  width: 15%;
   background-color: #fff;
   display: flex;
   justify-content: center;
@@ -1035,14 +1035,14 @@ export default {
 .footer-top_logo {
   width: 200px;
   height: 200px;
-  object-fit: cover;
+  object-fit: contain;
 }
 .footer-top_logo img {
   width: 100%;
   height: 100%;
 }
 .footer-top_right {
-  width: 70%;
+  width: 85%;
   background-color: #fff;
   display: flex;
   align-items: center;
@@ -1050,6 +1050,97 @@ export default {
 }
 .footer-top_right_content {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-top_right_content_1 {
+  width: 20%;
+  display: flex;
+}
+.footer-top_right_content_1_img {
+  width: 80px;
+  height: 70px;
+  object-fit: cover;
+}
+.footer-top_right_content_1_img img {
+  width: 100%;
+}
+.footer-top_right_content_1_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-top_right_content_1_list p a {
+  color: #ffac6a;
+  text-decoration: none;
+  font-size: 20px;
+}
+.footer-top_right_content_2 {
+  width: 20%;
+  display: flex;
+}
+.footer-top_right_content_2_img {
+  width: 80px;
+  height: 70px;
+  object-fit: cover;
+}
+.footer-top_right_content_2_img img {
+  width: 100%;
+}
+.footer-top_right_content_2_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-top_right_content_2_list p a {
+  color: #ffac6a;
+  text-decoration: none;
+  font-size: 20px;
+}
+.footer-top_right_content_3 {
+  width: 20%;
+  display: flex;
+}
+.footer-top_right_content_3_img {
+  width: 80px;
+  height: 70px;
+  object-fit: cover;
+}
+.footer-top_right_content_3_img img {
+  width: 100%;
+}
+.footer-top_right_content_3_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-top_right_content_3_list p a {
+  color: #ffac6a;
+  text-decoration: none;
+  font-size: 20px;
+}
+.footer-top_right_content_4 {
+  width: 25%;
+  display: flex;
+}
+.footer-top_right_content_4_img {
+  width: 80px;
+  height: 70px;
+  object-fit: cover;
+}
+.footer-top_right_content_4_img img {
+  width: 100%;
+}
+.footer-top_right_content_4_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-top_right_content_4_list p a {
+  color: #ffac6a;
+  text-decoration: none;
+  font-size: 20px;
 }
 .footer-bottom {
   background-color: #ffac6a;
