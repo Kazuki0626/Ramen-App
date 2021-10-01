@@ -50,10 +50,12 @@
     <div class="search-problem_content">
       <div class="search-problem_content_left">
         <div class="search-problem_content_left_img">
-          <img
-            src="@/assets/img/ramen-topics.png"
-            class="search-problem_content_left_img_item"
-          />
+          <a href="/_nuxt/assets/img/ramen-topics.png">
+            <img
+              src="@/assets/img/ramen-topics.png"
+              class="search-problem_content_left_img_item"
+            />
+          </a>
         </div>
       </div>
       <div class="search-problem_content_right">
@@ -1006,11 +1008,12 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #c8c8c8;
+  background-color: #ffac6a;
+  color: #fff;
+  font-size: 18px;
   padding: 0 30px;
   margin: 30px 0;
   box-shadow: 4px 4px 6px rgb(0 0 0 / 12%);
-  display: none;
 }
 .search-free_list_content_item_parent p {
   width: 80%;
