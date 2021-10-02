@@ -353,6 +353,9 @@
 </template>
 
 <style lang="scss" scoped>
+.terms-page {
+  filter: brightness(120%);
+}
 .header-resister-btn {
   border: 1px solid #ff8e00;
   width: 150px;
@@ -399,17 +402,18 @@
 .header_head h1 {
   letter-spacing: 3px;
   font-weight: Normal;
-  color: #ff8e00;
 }
 .terms {
   width: 100%;
-  background-color: #fff;
+  background-color: rgb(255, 172, 106);
   padding: 100px 0;
+  color: #000;
+  box-shadow: 2px 2px 4px rgb(0 0 0 / 12%);
 }
 .terms-content {
   max-width: 60%;
   margin: 0 auto;
-  background-color: #ffac6a;
+  background-color: #fff;
   border-radius: 8px;
 }
 .terms-content_head {
@@ -824,7 +828,8 @@
   font-size: 20px;
 }
 .footer-bottom {
-  background-color: #ffac6a;
+  background-color: #fff;
+  color: #000;
 }
 .v-application p {
   margin: 0;

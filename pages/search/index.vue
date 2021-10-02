@@ -1146,7 +1146,8 @@ export default {
   font-size: 20px;
 }
 .footer-bottom {
-  background-color: #ffac6a;
+  background-color: #fff;
+  color: #000;
 }
 .v-application p {
   margin: 0;
