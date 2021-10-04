@@ -413,7 +413,7 @@ export default {
   justify-content: space-around;
 }
 .header-top_content {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;

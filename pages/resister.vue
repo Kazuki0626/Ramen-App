@@ -1,177 +1,136 @@
 <template>
-  <section class="resister-top">
+  <section class="resister-page">
     <header class="header">
       <div class="header-top">
         <div class="header-top_content">
           <div class="header_head">
             <nuxt-link to="/search/">
-              <h1>Ramen App</h1>
+              <div class="header_head_img">
+                <img src="@/assets/img/sample-header.png" />
+              </div>
             </nuxt-link>
           </div>
-          <div class="header-nav">
-            <input id="header-check" type="checkbox" class="header-hidden" />
-            <label for="header-check" class="header-open"><span></span></label>
-            <div class="header-content">
-              <div class="header-content_head">
-                <h1 style="font-size: 48px">Ramen App</h1>
-              </div>
-              <div class="header-content_item">
-                <div class="header-content_list">
-                  <ul>
-                    <nuxt-link to="../login/">
-                      <li>ログイン</li>
-                    </nuxt-link>
-                    <nuxt-link to="../resister/">
-                      <li>新規登録</li>
-                    </nuxt-link>
-                    <nuxt-link to="/question/">
-                      <li>よくある質問</li>
-                    </nuxt-link>
-                    <nuxt-link to="/form/">
-                      <li>お問い合わせ</li>
-                    </nuxt-link>
-                    <nuxt-link to="/terms/">
-                      <li>ご利用規約</li>
-                    </nuxt-link>
-                    <nuxt-link to="/privacy/">
-                      <li>プライバシーポリシー</li>
-                    </nuxt-link>
-                  </ul>
-                </div>
-              </div>
+          <div class="header-btn">
+            <div class="header-resister">
+              <nuxt-link to="/resister/">
+                <button type="button" class="header-resister-btn">
+                  新規登録
+                </button>
+              </nuxt-link>
+            </div>
+            <div class="header-login">
+              <nuxt-link to="/login/">
+                <button type="button" class="header-login-btn">ログイン</button>
+              </nuxt-link>
             </div>
           </div>
         </div>
       </div>
-      <div class="header-center">
-        <div class="header-center_content">
-          <div class="header-center_list">
-            <ul>
-              <div class="header-center_list_1">
-                <nuxt-link to="/login/">
-                  <li style="color: #fff">Login</li>
-                  <p style="color: #fff">ログイン</p>
-                </nuxt-link>
-              </div>
-              <div class="header-center_list_2">
-                <nuxt-link to="/resister/">
-                  <li style="color: #fff">Resister</li>
-                  <p style="color: #fff">新規登録</p>
-                </nuxt-link>
-              </div>
-              <div class="header-center_list_3">
-                <nuxt-link to="/question/">
-                  <li style="color: #fff">Question</li>
-                  <p style="color: #fff">よくある質問</p>
-                </nuxt-link>
-              </div>
-              <div class="header-center_list_4">
-                <nuxt-link to="/form/">
-                  <li style="color: #fff">Contact</li>
-                  <p style="color: #fff">お問い合わせ</p>
-                </nuxt-link>
-              </div>
-              <div class="header-center_list_5">
-                <nuxt-link to="/terms/">
-                  <li style="color: #fff">Terms</li>
-                  <p style="color: #fff">ご利用規約</p>
-                </nuxt-link>
-              </div>
-              <div class="header-center_list_6">
-                <nuxt-link to="/privacy/">
-                  <li style="color: #fff">Privacy</li>
-                  <p style="color: #fff">プライバシーポリシー</p>
-                </nuxt-link>
-              </div>
-            </ul>
-          </div>
-        </div>
-      </div>
     </header>
-    <div class="resister-form">
-      <div class="resister-form_content">
-        <div class="resister-form_head">
-          <h1>Resister</h1>
-          <p>新規登録</p>
+    <div class="resister">
+      <div class="resister-content">
+        <div class="resister-content_head">
+          <h1>新規登録</h1>
         </div>
-        <div class="resister-form_resister_content">
-          <div class="resister-form_resister_name">
-            ユーザーネーム
-            <input
-              type="text"
-              placeholder="ユーザーネーム"
-              class="resister-form_resister_name_form"
-            />
+        <div class="resister-content_item">
+          <div class="resister-content_item_username">
+            <div class="resister-content_item_username_list">
+              <div class="resister-content_item_username_badge">
+                <p>※必須</p>
+              </div>
+              <div class="resister-content_item_username_text">
+                <p>ユーザー名<br /></p>
+              </div>
+            </div>
+            <input type="text" class="resister-content_item_username_textbox" />
           </div>
-          <div class="resister-form_resister_tel">
-            電話番号
-            <input
-              type="text"
-              placeholder="電話番号"
-              class="resister-form_resister_tel_form"
-            />
+          <div class="resister-content_item_email">
+            <p>メールアドレス<br /></p>
+            <input type="text" class="resister-content_item_email_text" />
           </div>
-          <div class="resister-form_resister_address">
-            住所
-            <input
-              type="text"
-              placeholder="住所"
-              class="resister-form_resister_address_form"
-            />
+          <div class="resister-content_item_address">
+            <p>住所<br /></p>
+            <input type="text" class="resister-content_item_address_text" />
           </div>
-          <div class="resister-form_resister_email">
-            メールアドレス
-            <input
-              type="text"
-              placeholder="メールアドレス"
-              class="resister-form_resister_email_form"
-            />
+          <div class="resister-content_item_phone">
+            <p>電話番号<br /></p>
+            <input type="text" class="resister-content_item_phone_text" />
           </div>
-          <div class="resister-form_resister_password">
-            パスワード
+          <div class="resister-content_item_password">
+            <p>パスワード<br /></p>
             <input
               type="password"
-              placeholder="パスワード"
-              class="resister-form_resister_password_form"
+              class="resister-content_item_password_text"
             />
           </div>
-          <div class="resister-form_resister_btn">
-            <button type="button" class="resister-form_resister_btn_click">
-              新規登録する
-            </button>
+          <div class="resister-content_item_password_2">
+            <p>パスワード(確認用)<br /></p>
+            <input
+              type="password"
+              class="resister-content_item_password_2_text"
+            />
           </div>
         </div>
       </div>
     </div>
     <footer class="footer">
-      <div class="footer-top">
-        <div class="footer-top_content">
-          <ul class="footer-top_content_list">
-            <nuxt-link to="/login">
-              <li>ログイン</li>
-            </nuxt-link>
-            <nuxt-link to="/resister">
-              <li>新規登録</li>
-            </nuxt-link>
-            <nuxt-link to="/question">
-              <li>よくある質問</li>
-            </nuxt-link>
-            <nuxt-link to="/form">
-              <li>お問い合わせ</li>
-            </nuxt-link>
-            <nuxt-link to="/terms">
-              <li>ご利用規約</li>
-            </nuxt-link>
-            <nuxt-link to="/privacy">
-              <li>プライバシーポリシー</li>
-            </nuxt-link>
-          </ul>
+      <div class="footer-content">
+        <div class="footer-top">
+          <div class="footer-top_left">
+            <div class="footer-top_logo">
+              <img src="@/assets/img/sample-header.png" alt="" />
+            </div>
+          </div>
+          <div class="footer-top_right">
+            <div class="footer-top_right_content">
+              <div class="footer-top_right_content_1">
+                <div class="footer-top_right_content_1_img">
+                  <img src="@/assets/img/footer-arrow.png" alt="" />
+                </div>
+                <div class="footer-top_right_content_1_list">
+                  <p>
+                    <nuxt-link to="/resister/"> 新規登録 </nuxt-link>
+                  </p>
+                </div>
+              </div>
+              <div class="footer-top_right_content_2">
+                <div class="footer-top_right_content_2_img">
+                  <img src="@/assets/img/footer-arrow.png" alt="" />
+                </div>
+                <div class="footer-top_right_content_2_list">
+                  <p>
+                    <nuxt-link to="/login/"> ログイン </nuxt-link>
+                  </p>
+                </div>
+              </div>
+              <div class="footer-top_right_content_3">
+                <div class="footer-top_right_content_3_img">
+                  <img src="@/assets/img/footer-arrow.png" alt="" />
+                </div>
+                <div class="footer-top_right_content_3_list">
+                  <p>
+                    <nuxt-link to="/terms/"> ご利用規約 </nuxt-link>
+                  </p>
+                </div>
+              </div>
+              <div class="footer-top_right_content_4">
+                <div class="footer-top_right_content_4_img">
+                  <img src="@/assets/img/footer-arrow.png" alt="" />
+                </div>
+                <div class="footer-top_right_content_4_list">
+                  <p>
+                    <nuxt-link to="/privacy/"> プライバシーポリシー </nuxt-link>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="footer-bottom">
-        <div class="footer-bottom_content">
-          <div class="footer-bottom_head">
-            <p>Copyright © 2021 Ramen App All Rights Reserved.</p>
+        <div class="footer-bottom">
+          <div class="footer-bottom_content">
+            <div class="footer-bottom_copyright">
+              <p>Copyright © 2021 Ramen App All Rights Reserved.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -180,317 +139,328 @@
 </template>
 
 <style lang="scss" scoped>
+.resister-page {
+  filter: brightness(120%);
+}
+.header-resister-btn {
+  border: 1px solid #ff8e00;
+  width: 150px;
+  color: #ff8e00;
+  padding: 8px;
+  border-radius: 30px;
+  margin: 0 10px;
+}
+.header-login-btn {
+  border: 1px solid #ff8e00;
+  width: 150px;
+  color: #ff8e00;
+  padding: 8px;
+  border-radius: 30px;
+  margin: 0 10px;
+}
+.header-btn {
+  display: flex;
+  justify-content: space-around;
+}
 .header-top_content {
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  padding: 5px 0;
+  align-items: center;
 }
 .header-top {
-  border-top: 4px solid #ff8e00;
   background-color: #fff;
 }
 .header_head {
   display: flex;
   align-items: center;
 }
+.header_head_img {
+  width: 100%;
+  height: 100%;
+}
+.header_head_img img {
+  width: 200px;
+  height: 180px;
+  object-fit: contain;
+}
 .header_head h1 {
   letter-spacing: 3px;
   font-weight: Normal;
   color: #ff8e00;
 }
-.header-center {
-  width: 100%;
-  height: 75px;
-  background-color: #ff8e00;
-}
-.header-center_content {
-  max-width: 85%;
-  margin: 0 auto;
-  padding: 12px 0 0 0;
-  text-align: center;
-}
-.header-center_list ul {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.header-center_list ul li {
-  list-style: none;
-  color: #000;
-  letter-spacing: 3px;
-  margin-bottom: 3px;
-}
-.header-center_list p {
-  color: #000;
-  letter-spacing: 3px;
-}
-.header-center_list_1 {
-  width: 100%;
-}
-.header-center_list_2 {
-  width: 100%;
-}
-.header-center_list_3 {
-  width: 100%;
-}
-.header-center_list_4 {
-  width: 100%;
-}
-.header-center_list_5 {
-  width: 100%;
-}
-.header-center_list_6 {
-  width: 100%;
-}
-.header-hidden {
-  display: none;
-}
-
-.header-open {
-  display: flex;
-  height: 60px;
-  width: 60px;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  z-index: 100;
-  cursor: pointer;
-}
-
-.header-open span,
-.header-open span:before,
-.header-open span:after {
-  content: '';
-  display: block;
-  height: 3px;
-  width: 25px;
-  border-radius: 3px;
-  background: #ff8e00;
-  transition: 0.5s;
-  position: absolute;
-}
-
-.header-open span:before {
-  bottom: 8px;
-}
-
-.header-open span:after {
-  top: 8px;
-}
-
-#header-check:checked ~ .header-open span {
-  background: rgba(255, 255, 255, 0);
-}
-
-#header-check:checked ~ .header-open span::before {
-  bottom: 0;
-  transform: rotate(45deg);
-}
-
-#header-check:checked ~ .header-open span::after {
-  top: 0;
-  transform: rotate(-45deg);
-}
-
-.header-content_item {
-  max-width: 50%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-}
-
-.header-content {
-  width: 30%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 100%;
-  z-index: 99;
-  background-color: rgb(241, 154, 41);
-  transition: 0.8s;
-  margin: 0 auto;
-}
-
-.header-content_head {
-  text-align: center;
-  padding: 30px 0;
-}
-
-.header-content_head h1 {
-  color: #fff;
-  letter-spacing: 3px;
-  font-weight: lighter;
-}
-
-.header-content_list {
-  width: 100%;
-}
-
-.header-content_list ul {
-  text-align: center;
-}
-
-.header-content_list ul li {
-  color: #fff;
-  line-height: 6;
-  letter-spacing: 2px;
-  list-style: none;
-  text-decoration: none;
-}
-
-.v-application a {
-  text-decoration: none;
-}
-
-.header-content .header-list {
-  width: 80%;
-  margin: 0 auto;
-  padding: 30px 0;
-}
-
-#header-check:checked ~ .header-content {
-  left: 0;
-}
-
-.resister-form {
+.header-heading {
   background-color: #fff;
 }
-
-.resister-form_content {
+.resister {
+  background-color: #ffac6a;
+  padding: 100px;
+}
+.resister-content {
   max-width: 50%;
   margin: 0 auto;
+  padding: 50px;
+  background-color: #fff;
+  color: #000;
 }
-
-.resister-form_head {
+.resister-content_head {
   text-align: center;
-  padding: 50px 0 30px 0;
+  padding: 0 0 30px 0;
 }
-
-.resister-form_head h1 {
-  font-size: 32px;
-  letter-spacing: 3px;
+.resister-content_head h1 {
+  letter-spacing: 5px;
+  font-size: 36px;
   font-weight: Normal;
-  color: #000;
 }
-
-.resister-form_head p {
-  font-size: 20px;
-  letter-spacing: 2px;
-  color: #000;
+.resister-content_item_username {
+  margin: 30px 0;
 }
-
-.resister-form_resister_name {
-  color: #000;
-  width: 100%;
-  padding: 30px 0;
-}
-
-.resister-form_resister_name_form {
-  width: 100%;
-  border: 1px solid #c8c8c8;
-  padding: 12px 24px;
-  border-radius: 8px;
-}
-
-.resister-form_resister_address {
-  color: #000;
-  width: 100%;
-  padding: 30px 0;
-}
-
-.resister-form_resister_address_form {
-  width: 100%;
-  border: 1px solid #c8c8c8;
-  padding: 12px 24px;
-  border-radius: 8px;
-}
-
-.resister-form_resister_tel {
-  color: #000;
-  width: 100%;
-  padding: 30px 0;
-}
-
-.resister-form_resister_tel_form {
-  width: 100%;
-  border: 1px solid #c8c8c8;
-  padding: 12px 24px;
-  border-radius: 8px;
-}
-
-.resister-form_resister_email {
-  color: #000;
-  width: 100%;
-  padding: 30px 0;
-}
-
-.resister-form_resister_email_form {
-  width: 100%;
-  border: 1px solid #c8c8c8;
-  padding: 12px 24px;
-  border-radius: 8px;
-}
-
-.resister-form_resister_password {
-  width: 100%;
-  padding: 30px 0 60px 0;
-  color: #000;
-}
-
-.resister-form_resister_password_form {
-  width: 100%;
-  border: 1px solid #c8c8c8;
-  padding: 12px 24px;
-  border-radius: 8px;
-}
-
-.resister-form_resister_btn {
-  text-align: center;
-  padding: 0 0 75px 0;
-}
-
-.resister-form_resister_btn_click {
-  background-color: #ff8e00;
-  border-radius: 30px;
-  padding: 10px;
-  width: 250px;
-  color: #fff;
-}
-
-.footer-top {
-  background-color: #ff8e00;
-}
-.footer-top_content {
-  width: 80%;
-  margin: 0 auto;
-  padding: 30px;
-}
-.footer-top_content_list {
+.resister-content_item_username_list {
   display: flex;
-  list-style: none;
+  align-items: center;
 }
-.footer-top_content_list a {
+.resister-content_item_username_badge {
+  width: 57px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+.resister-content_item_username_text {
+  display: flex;
+  align-items: center;
+}
+.resister-content_item_username_badge p {
+  width: 100%;
+  background-color: #dc3545;
+  color: #fff !important;
+  padding: 0 !important;
+  border-radius: 50px;
+  text-align: center;
+}
+.resister-content_item_username p {
+  padding: 8px 0;
+  color: #ffac6a;
+  font-weight: bolder;
+}
+.resister-content_item_username_textbox {
+  width: 100%;
+  background-color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: 1px solid #c8c8c8;
+}
+.resister-content_item_address {
+  margin: 30px 0;
+}
+.resister-content_item_address_text {
+  width: 100%;
+  background-color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: 1px solid #c8c8c8;
+}
+.resister-content_item_address p {
+  padding: 8px 0;
+  color: #ffac6a;
+  font-weight: bolder;
+}
+.resister-content_item_phone {
+  margin: 30px 0;
+}
+.resister-content_item_phone_text {
+  width: 100%;
+  background-color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: 1px solid #c8c8c8;
+}
+.resister-content_item_phone p {
+  padding: 8px 0;
+  color: #ffac6a;
+  font-weight: bolder;
+}
+.resister-content_item_email {
+  margin: 30px 0;
+}
+.resister-content_item_email_text {
+  width: 100%;
+  background-color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: 1px solid #c8c8c8;
+}
+.resister-content_item_email p {
+  padding: 8px 0;
+  color: #ffac6a;
+  font-weight: bolder;
+}
+.resister-content_item_password {
+  margin: 30px 0;
+}
+.resister-content_item_password_text {
+  width: 100%;
+  background-color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: 1px solid #c8c8c8;
+}
+.resister-content_item_password p {
+  padding: 8px 0;
+  color: #ffac6a;
+  font-weight: bolder;
+}
+.resister-content_item_password_2 {
+  margin: 30px 0;
+}
+.resister-content_item_password_2_text {
+  width: 100%;
+  background-color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: 1px solid #c8c8c8;
+}
+.resister-content_item_password_2 p {
+  padding: 8px 0;
+  color: #ffac6a;
+  font-weight: bolder;
+}
+.footer {
+  width: 100%;
+}
+.footer-top {
+  width: 100%;
+  display: flex;
+}
+.footer-top_left {
+  width: 15%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-top_logo {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+.footer-top_logo img {
+  width: 100%;
+  height: 100%;
+}
+.footer-top_right {
+  width: 85%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-top_right_content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-top_right_content_1 {
   width: 20%;
+  display: flex;
+}
+.footer-top_right_content_1_img {
+  width: 80px;
+  height: 70px;
+  object-fit: cover;
+}
+.footer-top_right_content_1_img img {
+  width: 100%;
+}
+.footer-top_right_content_1_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-top_right_content_1_list p a {
+  color: #ffac6a;
   text-decoration: none;
-  color: #fff;
+  font-size: 20px;
+}
+.footer-top_right_content_2 {
+  width: 20%;
+  display: flex;
+}
+.footer-top_right_content_2_img {
+  width: 80px;
+  height: 70px;
+  object-fit: cover;
+}
+.footer-top_right_content_2_img img {
+  width: 100%;
+}
+.footer-top_right_content_2_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-top_right_content_2_list p a {
+  color: #ffac6a;
+  text-decoration: none;
+  font-size: 20px;
+}
+.footer-top_right_content_3 {
+  width: 20%;
+  display: flex;
+}
+.footer-top_right_content_3_img {
+  width: 80px;
+  height: 70px;
+  object-fit: cover;
+}
+.footer-top_right_content_3_img img {
+  width: 100%;
+}
+.footer-top_right_content_3_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-top_right_content_3_list p a {
+  color: #ffac6a;
+  text-decoration: none;
+  font-size: 20px;
+}
+.footer-top_right_content_4 {
+  width: 25%;
+  display: flex;
+}
+.footer-top_right_content_4_img {
+  width: 80px;
+  height: 70px;
+  object-fit: cover;
+}
+.footer-top_right_content_4_img img {
+  width: 100%;
+}
+.footer-top_right_content_4_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-top_right_content_4_list p a {
+  color: #ffac6a;
+  text-decoration: none;
+  font-size: 20px;
 }
 .footer-bottom {
   background-color: #fff;
-}
-.footer-bottom_content {
-  width: 80%;
-  margin: 0 auto;
-}
-.footer-bottom_head {
-  text-align: center;
-  padding: 30px 0;
-}
-.footer-bottom_head p {
   color: #000;
 }
 .v-application p {
   margin: 0;
+}
+.footer-bottom_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
 }
 </style>
