@@ -191,7 +191,7 @@
         </div>
         <div class="search-free_form">
           <img
-            src="	https://orizuru-care.com/static/img/magnify.svg"
+            src="https://orizuru-care.com/static/img/magnify.svg"
             class="search-free_icon"
           />
           <input
@@ -316,7 +316,7 @@ export default {
   },
   mounted() {
     this.$axios(
-      `http://webservice.recruit.co.jp/hotpepper/gourmet/v1/?key=${process.env.API_URL}&large_area=Z011&format=json`,
+      `https://webservice.recruit.co.jp/hotpepper/gourmet/v1/?key=${process.env.API_URL}&large_area=Z011&format=json`,
       {
         params: {
           key: process.env.API_URL,
@@ -336,7 +336,7 @@ export default {
     doSearch() {
       this.$axios
         .get(
-          `http://webservice.recruit.co.jp/hotpepper/gourmet/v1/?key=${process.env.API_URL}&keyword=${this.freeWord}`,
+          `https://webservice.recruit.co.jp/hotpepper/gourmet/v1/?key=${process.env.API_URL}&keyword=${this.freeWord}`,
           {
             params: {
               format: 'json',
@@ -355,9 +355,9 @@ export default {
       try {
         const position = await getCurrentPosition().catch(this.setError)
         // TODO positionが取れなくてundefindになる。ロケーション情報が取れないのでこれを対処する
-        // https://qiita.com/Mitsunori_Tsukada/items/5f25d1808dd3d9840b85
+        // httpss://qiita.com/Mitsunori_Tsukada/items/5f25d1808dd3d9840b85
         const { data } = await this.$axios.get(
-          'http://localhost:3000/api/gourmet/v1/',
+          'https://localhost:3000/api/gourmet/v1/',
           {
             params: {
               key: process.env.apikey,
@@ -378,7 +378,7 @@ export default {
       }
     },
     async asyncData({ $axios }) {
-      const url = `http://webservice.recruit.co.jp/hotpepper/gourmet/v1/?key=${process.env.API_URL}&large_area=Z011&format=json`
+      const url = `https://webservice.recruit.co.jp/hotpepper/gourmet/v1/?key=${process.env.API_URL}&large_area=Z011&format=json`
       const response = await $axios.$get(url)
       return {
         posts: response,
