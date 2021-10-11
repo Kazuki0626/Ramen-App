@@ -157,9 +157,6 @@ export default {
       longitude: 0,
       show: false,
       freeWord: '',
-      items_1: ['Foo', 'Bar', 'Fizz', 'Buzz'],
-      items_2: ['aaa', 'bbb', 'ccc', 'ddd'],
-      items_3: ['eee', 'fff', 'ggg', 'hhh'],
     }
   },
   mounted() {
@@ -181,19 +178,8 @@ export default {
       .catch(this.setError)
   },
   methods: {
-    doSearch() {
-      this.$axios
-        .get(
-          `https://webservice.recruit.co.jp/hotpepper/gourmet/v1/?key=${process.env.API_URL}&keyword=${this.freeWord}`,
-          {
-            params: {
-              format: 'json',
-            },
-          }
-        )
-        .then((data) => {
-          this.shops = data.data.results.shop
-        })
+    doSearch(shop) {
+      this.$store.commit('fetchAllShops', shop)
     },
     setError(err) {
       console.log(err)
