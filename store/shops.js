@@ -1,4 +1,29 @@
-export const actions = () => {}
-export const mutations = () => {}
-export const state = () => {}
-export const getters = () => {}
+export const state = () => ({
+  shops: [],
+})
+
+export const mutations = {
+  getAllShops(shops) {
+    state.shops = shops
+  },
+}
+
+export const actions = {
+  async fetchAllShops({ commit }) {
+    await this.$axios
+      .get(
+        `https://webservice.recruit.co.jp/hotpepper/gourmet/v1/?key=${process.env.API_URL}&keyword=${this.freeWord}`,
+        {
+          params: {
+            format: 'json',
+          },
+        }
+      )
+      .then((data) => {
+        const allShops = data.data.results.shop
+        commit('getAllShops', allShops)
+      })
+  },
+}
+
+export const getters = {}
