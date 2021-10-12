@@ -7,11 +7,17 @@ jobs:
   build_and_preview:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - run: yarn
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+      - name: Install Dependencies
+        run: yarn
+      - name: Build
+        run: yarn generate
+        with:
+          name: dist
+          path: dist
         env:
           SOME_ENV: test
-          SOME_SECRET_ENV: ${{ secrets.SOME_SECRET_ENV }}
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
