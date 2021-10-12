@@ -45,31 +45,68 @@
             <input type="text" class="resister-content_item_username_textbox" />
           </div>
           <div class="resister-content_item_email">
-            <p>メールアドレス<br /></p>
-            <input type="text" class="resister-content_item_email_text" />
+            <div class="resister-content_item_email_list">
+              <div class="resister-content_item_email_badge">
+                <p>※必須</p>
+              </div>
+              <div class="resister-content_item_email_text">
+                <p>メールアドレス<br /></p>
+              </div>
+            </div>
+            <input type="text" class="resister-content_item_email_textbox" />
           </div>
           <div class="resister-content_item_address">
-            <p>住所<br /></p>
-            <input type="text" class="resister-content_item_address_text" />
+            <div class="resister-content_item_address_list">
+              <div class="resister-content_item_address_badge">
+                <p>※必須</p>
+              </div>
+              <div class="resister-content_item_address_text">
+                <p>住所<br /></p>
+              </div>
+            </div>
+            <input type="text" class="resister-content_item_address_textbox" />
           </div>
           <div class="resister-content_item_phone">
-            <p>電話番号<br /></p>
-            <input type="text" class="resister-content_item_phone_text" />
+            <div class="resister-content_item_phone_list">
+              <div class="resister-content_item_phone_badge">
+                <p>※必須</p>
+              </div>
+              <div class="resister-content_item_phone_text">
+                <p>電話番号<br /></p>
+              </div>
+            </div>
+            <input type="text" class="resister-content_item_phone_textbox" />
           </div>
           <div class="resister-content_item_password">
-            <p>パスワード<br /></p>
-            <input
-              type="password"
-              class="resister-content_item_password_text"
-            />
+            <div class="resister-content_item_password_list">
+              <div class="resister-content_item_password_badge">
+                <p>※必須</p>
+              </div>
+              <div class="resister-content_item_password_text">
+                <p>パスワード<br /></p>
+              </div>
+            </div>
+            <input type="text" class="resister-content_item_password_textbox" />
           </div>
           <div class="resister-content_item_password_2">
-            <p>パスワード(確認用)<br /></p>
+            <div class="resister-content_item_password_2_list">
+              <div class="resister-content_item_password_2_badge">
+                <p>※必須</p>
+              </div>
+              <div class="resister-content_item_password_2_text">
+                <p>パスワード<br /></p>
+              </div>
+            </div>
             <input
-              type="password"
-              class="resister-content_item_password_2_text"
+              type="text"
+              class="resister-content_item_password_2_textbox"
             />
           </div>
+        </div>
+        <div class="resister-content_btn">
+          <button type="button" class="resister-content_btn_click">
+            送信する
+          </button>
         </div>
       </div>
     </div>
@@ -198,7 +235,7 @@
   padding: 100px;
 }
 .resister-content {
-  max-width: 50%;
+  max-width: 70%;
   margin: 0 auto;
   padding: 50px;
   background-color: #fff;
@@ -219,9 +256,10 @@
 .resister-content_item_username_list {
   display: flex;
   align-items: center;
+  padding: 3px 0;
 }
 .resister-content_item_username_badge {
-  width: 57px;
+  width: 60px;
   height: 30px;
   display: flex;
   align-items: center;
@@ -231,12 +269,16 @@
   display: flex;
   align-items: center;
 }
+.resister-content_item_username_text p {
+  font-size: 24px;
+  font-weight: Normal;
+  letter-spacing: 3px;
+}
 .resister-content_item_username_badge p {
   width: 100%;
   background-color: #dc3545;
   color: #fff !important;
   padding: 0 !important;
-  border-radius: 50px;
   text-align: center;
 }
 .resister-content_item_username p {
@@ -251,80 +293,233 @@
   border-radius: 8px;
   border: 1px solid #c8c8c8;
 }
-.resister-content_item_address {
-  margin: 30px 0;
-}
-.resister-content_item_address_text {
-  width: 100%;
-  background-color: #fff;
-  padding: 12px 24px;
-  border-radius: 8px;
-  border: 1px solid #c8c8c8;
-}
-.resister-content_item_address p {
-  padding: 8px 0;
-  color: #ffac6a;
-  font-weight: bolder;
-}
-.resister-content_item_phone {
-  margin: 30px 0;
-}
-.resister-content_item_phone_text {
-  width: 100%;
-  background-color: #fff;
-  padding: 12px 24px;
-  border-radius: 8px;
-  border: 1px solid #c8c8c8;
-}
-.resister-content_item_phone p {
-  padding: 8px 0;
-  color: #ffac6a;
-  font-weight: bolder;
-}
 .resister-content_item_email {
   margin: 30px 0;
 }
+.resister-content_item_email_list {
+  display: flex;
+  align-items: center;
+  padding: 3px 0;
+}
+.resister-content_item_email_badge {
+  width: 60px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
 .resister-content_item_email_text {
+  display: flex;
+  align-items: center;
+}
+.resister-content_item_email_text p {
+  font-size: 24px;
+  font-weight: Normal;
+  letter-spacing: 3px;
+}
+.resister-content_item_email_badge p {
   width: 100%;
-  background-color: #fff;
-  padding: 12px 24px;
-  border-radius: 8px;
-  border: 1px solid #c8c8c8;
+  background-color: #dc3545;
+  color: #fff !important;
+  padding: 0 !important;
+  text-align: center;
 }
 .resister-content_item_email p {
   padding: 8px 0;
   color: #ffac6a;
   font-weight: bolder;
 }
-.resister-content_item_password {
-  margin: 30px 0;
-}
-.resister-content_item_password_text {
+.resister-content_item_email_textbox {
   width: 100%;
   background-color: #fff;
   padding: 12px 24px;
   border-radius: 8px;
   border: 1px solid #c8c8c8;
+}
+.resister-content_item_address {
+  margin: 30px 0;
+}
+.resister-content_item_address_list {
+  display: flex;
+  align-items: center;
+  padding: 3px 0;
+}
+.resister-content_item_address_badge {
+  width: 60px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+.resister-content_item_address_text {
+  display: flex;
+  align-items: center;
+}
+.resister-content_item_address_text p {
+  font-size: 24px;
+  font-weight: Normal;
+  letter-spacing: 3px;
+}
+.resister-content_item_address_badge p {
+  width: 100%;
+  background-color: #dc3545;
+  color: #fff !important;
+  padding: 0 !important;
+  text-align: center;
+}
+.resister-content_item_address p {
+  padding: 8px 0;
+  color: #ffac6a;
+  font-weight: bolder;
+}
+.resister-content_item_address_textbox {
+  width: 100%;
+  background-color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: 1px solid #c8c8c8;
+}
+.resister-content_item_phone {
+  margin: 30px 0;
+}
+.resister-content_item_phone_list {
+  display: flex;
+  align-items: center;
+  padding: 3px 0;
+}
+.resister-content_item_phone_badge {
+  width: 60px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+.resister-content_item_phone_text {
+  display: flex;
+  align-items: center;
+}
+.resister-content_item_phone_text p {
+  font-size: 24px;
+  font-weight: Normal;
+  letter-spacing: 3px;
+}
+.resister-content_item_phone_badge p {
+  width: 100%;
+  background-color: #dc3545;
+  color: #fff !important;
+  padding: 0 !important;
+  text-align: center;
+}
+.resister-content_item_phone p {
+  padding: 8px 0;
+  color: #ffac6a;
+  font-weight: bolder;
+}
+.resister-content_item_phone_textbox {
+  width: 100%;
+  background-color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: 1px solid #c8c8c8;
+}
+.resister-content_item_password {
+  margin: 30px 0;
+}
+.resister-content_item_password_list {
+  display: flex;
+  align-items: center;
+  padding: 3px 0;
+}
+.resister-content_item_password_badge {
+  width: 60px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+.resister-content_item_password_text {
+  display: flex;
+  align-items: center;
+}
+.resister-content_item_password_text p {
+  font-size: 24px;
+  font-weight: Normal;
+  letter-spacing: 3px;
+}
+.resister-content_item_password_badge p {
+  width: 100%;
+  background-color: #dc3545;
+  color: #fff !important;
+  padding: 0 !important;
+  text-align: center;
 }
 .resister-content_item_password p {
   padding: 8px 0;
   color: #ffac6a;
   font-weight: bolder;
 }
-.resister-content_item_password_2 {
-  margin: 30px 0;
-}
-.resister-content_item_password_2_text {
+.resister-content_item_password_textbox {
   width: 100%;
   background-color: #fff;
   padding: 12px 24px;
   border-radius: 8px;
   border: 1px solid #c8c8c8;
 }
+.resister-content_item_password_2 {
+  margin: 30px 0;
+}
+.resister-content_item_password_2_list {
+  display: flex;
+  align-items: center;
+  padding: 3px 0;
+}
+.resister-content_item_password_2_badge {
+  width: 60px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+.resister-content_item_password_2_text {
+  display: flex;
+  align-items: center;
+}
+.resister-content_item_password_2_text p {
+  font-size: 24px;
+  font-weight: Normal;
+  letter-spacing: 3px;
+}
+.resister-content_item_password_2_badge p {
+  width: 100%;
+  background-color: #dc3545;
+  color: #fff !important;
+  padding: 0 !important;
+  text-align: center;
+}
 .resister-content_item_password_2 p {
   padding: 8px 0;
   color: #ffac6a;
   font-weight: bolder;
+}
+.resister-content_item_password_2_textbox {
+  width: 100%;
+  background-color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: 1px solid #c8c8c8;
+}
+.resister-content_btn {
+  max-width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px 0;
+}
+.resister-content_btn_click {
+  width: 100%;
+  background-color: #ffac6a;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 30px;
 }
 .footer {
   width: 100%;

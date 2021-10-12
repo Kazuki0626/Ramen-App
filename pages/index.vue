@@ -697,7 +697,7 @@ export default {
 }
 .search-solution_content_1_head h1 {
   letter-spacing: 3px;
-  font-weight: bold;
+  font-weight: Normal;
   font-size: 24px;
 }
 .search-solution_content_1_img {
@@ -733,7 +733,7 @@ export default {
 }
 .search-solution_content_2_head h1 {
   letter-spacing: 3px;
-  font-weight: bold;
+  font-weight: Normal;
   font-size: 24px;
 }
 .search-solution_content_2_img {
@@ -769,7 +769,7 @@ export default {
 }
 .search-solution_content_3_head h1 {
   letter-spacing: 3px;
-  font-weight: bold;
+  font-weight: Normal;
   font-size: 24px;
 }
 .search-solution_content_3_img {
@@ -805,7 +805,7 @@ export default {
 }
 .search-solution_content_4_head h1 {
   letter-spacing: 3px;
-  font-weight: bold;
+  font-weight: Normal;
   font-size: 24px;
 }
 .search-solution_content_4_img {
