@@ -86,7 +86,10 @@
                 <p>パスワード<br /></p>
               </div>
             </div>
-            <input type="text" class="resister-content_item_password_textbox" />
+            <input
+              type="password"
+              class="resister-content_item_password_textbox"
+            />
           </div>
           <div class="resister-content_item_password_2">
             <div class="resister-content_item_password_2_list">
@@ -94,18 +97,18 @@
                 <p>※必須</p>
               </div>
               <div class="resister-content_item_password_2_text">
-                <p>パスワード<br /></p>
+                <p>パスワード(確認用)<br /></p>
               </div>
             </div>
             <input
-              type="text"
+              type="password"
               class="resister-content_item_password_2_textbox"
             />
           </div>
         </div>
         <div class="resister-content_btn">
           <button type="button" class="resister-content_btn_click">
-            送信する
+            新規登録
           </button>
         </div>
       </div>
