@@ -184,6 +184,36 @@
         </div>
       </div>
     </div>
+    <div class="search-use">
+      <div class="search-use_content">
+        <div class="search-use_content_head">
+          <h1>Ramen App の使い方!!!</h1>
+        </div>
+        <div class="search-use_content_item">
+          <div class="search-use_content_item_1">
+            <div class="search-use_content_item_1_head">
+              <h1></h1>
+            </div>
+            <div class="search-use_content_item_1_img">
+              <img src="" alt="" />
+            </div>
+            <div class="search-use_content_item_1_text">
+              <p></p>
+            </div>
+          </div>
+          <div class="search-use_content_item_2">
+            <div class="search-use_content_item_2_head"></div>
+            <div class="search-use_content_item_2_img"></div>
+            <div class="search-use_content_item_2_text"></div>
+          </div>
+          <div class="search-use_content_item_3">
+            <div class="search-use_content_item_3_head"></div>
+            <div class="search-use_content_item_3_img"></div>
+            <div class="search-use_content_item_3_text"></div>
+          </div>
+        </div>
+      </div>
+    </div>
     <footer class="footer">
       <div class="footer-content">
         <div class="footer-top">
@@ -827,75 +857,19 @@ export default {
   letter-spacing: 3px;
   line-height: 2;
 }
-.search-top_head h1 {
+.search-use {
+  background-color: #ffac6a;
+}
+.search-use_content_head {
+  max-width: 50%;
+  margin: 0 auto;
   text-align: center;
-  padding: 30px;
+  padding: 30px 0 75px 0;
 }
-.search_detail {
-  text-align: center;
-  background-color: #fff;
-  padding: 0 0 50px 0;
-}
-.search_detail_head {
-  padding: 75px;
-}
-.search_detail h1 {
-  color: #000;
+.search-use_content_head h1 {
+  font-size: 36px;
   font-weight: Normal;
   letter-spacing: 3px;
-}
-.search_detail_content {
-  display: flex;
-  width: 80%;
-  margin: 0 auto;
-}
-.search_detail_content_1 {
-  width: 30%;
-  margin: 0 15px;
-}
-.search_detail_content_1_img {
-  margin: 15px 0;
-}
-.search_detail_content_1_img img {
-  width: 100%;
-  border-radius: 10px;
-}
-.search_detail_content_1_description {
-  width: 90%;
-  margin: 0 auto;
-  color: #000;
-}
-.search_detail_content_2 {
-  width: 30%;
-  margin: 0 15px;
-}
-.search_detail_content_2_img {
-  margin: 15px 0;
-}
-.search_detail_content_2_img img {
-  width: 100%;
-  border-radius: 10px;
-}
-.search_detail_content_2_description {
-  width: 90%;
-  margin: 0 auto;
-  color: #000;
-}
-.search_detail_content_3 {
-  width: 30%;
-  margin: 0 15px;
-}
-.search_detail_content_3_img {
-  margin: 15px 0;
-}
-.search_detail_content_3_img img {
-  width: 100%;
-  border-radius: 10px;
-}
-.search_detail_content_3_description {
-  width: 90%;
-  margin: 0 auto;
-  color: #000;
 }
 .theme--dark.v-application {
   background: #fff !important;
