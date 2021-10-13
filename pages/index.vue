@@ -192,24 +192,42 @@
         <div class="search-use_content_item">
           <div class="search-use_content_item_1">
             <div class="search-use_content_item_1_head">
-              <h1></h1>
+              <h1>サンプル</h1>
             </div>
             <div class="search-use_content_item_1_img">
-              <img src="" alt="" />
+              <img src="@/assets/img/computer_search_kensaku.png" alt="" />
             </div>
             <div class="search-use_content_item_1_text">
-              <p></p>
+              <p class="text-justify">
+                ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+              </p>
             </div>
           </div>
           <div class="search-use_content_item_2">
-            <div class="search-use_content_item_2_head"></div>
-            <div class="search-use_content_item_2_img"></div>
-            <div class="search-use_content_item_2_text"></div>
+            <div class="search-use_content_item_2_head">
+              <h1>サンプル</h1>
+            </div>
+            <div class="search-use_content_item_2_img">
+              <img src="@/assets/img/computer_search_kensaku.png" alt="" />
+            </div>
+            <div class="search-use_content_item_2_text">
+              <p class="text-justify">
+                ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+              </p>
+            </div>
           </div>
           <div class="search-use_content_item_3">
-            <div class="search-use_content_item_3_head"></div>
-            <div class="search-use_content_item_3_img"></div>
-            <div class="search-use_content_item_3_text"></div>
+            <div class="search-use_content_item_3_head">
+              <h1>サンプル</h1>
+            </div>
+            <div class="search-use_content_item_3_img">
+              <img src="@/assets/img/computer_search_kensaku.png" alt="" />
+            </div>
+            <div class="search-use_content_item_3_text">
+              <p class="text-justify">
+                ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -859,6 +877,7 @@ export default {
 }
 .search-use {
   background-color: #ffac6a;
+  padding: 0 0 100px 0;
 }
 .search-use_content_head {
   max-width: 50%;
@@ -870,6 +889,101 @@ export default {
   font-size: 36px;
   font-weight: Normal;
   letter-spacing: 3px;
+}
+.search-use_content_item {
+  display: flex;
+  max-width: 99%;
+  margin: 0 auto;
+}
+.search-use_content_item_1 {
+  width: 33%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #fff;
+  color: #000;
+  padding: 40px 20px;
+  margin: 0 15px;
+}
+.search-use_content_item_1_head {
+  text-align: center;
+  padding: 15px 0;
+}
+.search-use_content_item_1_head h1 {
+  letter-spacing: 3px;
+  font-size: 36px;
+  font-weight: Normal;
+}
+.search-use_content_item_1_img {
+  width: 100%;
+  padding: 30px 0;
+}
+.search-use_content_item_1_img img {
+  width: 200px;
+  height: 180px;
+}
+.search-use_content_item_1_text {
+  width: 90%;
+  margin: 0 auto;
+}
+.search-use_content_item_2 {
+  width: 33%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #fff;
+  color: #000;
+  padding: 40px 20px;
+  margin: 0 15px;
+}
+.search-use_content_item_2_head {
+  text-align: center;
+  padding: 15px 0;
+}
+.search-use_content_item_2_head h1 {
+  letter-spacing: 3px;
+  font-size: 36px;
+  font-weight: Normal;
+}
+.search-use_content_item_2_img {
+  width: 100%;
+  padding: 30px 0;
+}
+.search-use_content_item_2_img img {
+  width: 200px;
+  height: 180px;
+}
+.search-use_content_item_2_text {
+  width: 90%;
+  margin: 0 auto;
+}
+.search-use_content_item_3 {
+  width: 33%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #fff;
+  color: #000;
+  padding: 40px 20px;
+  margin: 0 15px;
+}
+.search-use_content_item_3_head {
+  text-align: center;
+  padding: 15px 0;
+}
+.search-use_content_item_3_head h1 {
+  letter-spacing: 3px;
+  font-size: 36px;
+  font-weight: Normal;
+}
+.search-use_content_item_3_img {
+  width: 100%;
+  padding: 30px 0;
+}
+.search-use_content_item_3_img img {
+  width: 200px;
+  height: 180px;
+}
+.search-use_content_item_3_text {
+  width: 90%;
+  margin: 0 auto;
 }
 .theme--dark.v-application {
   background: #fff !important;
