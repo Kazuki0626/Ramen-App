@@ -63,6 +63,14 @@
               ログイン
             </button>
           </div>
+          <div class="login-content_resister">
+            <nuxt-link to="../resister">
+              <p>新規登録</p>
+            </nuxt-link>
+            <nuxt-link to="../password-reset">
+              <p>パスワードを忘れた方</p>
+            </nuxt-link>
+          </div>
         </div>
       </div>
     </div>
@@ -303,6 +311,17 @@
   color: #fff;
   padding: 12px 24px;
   border-radius: 30px;
+}
+.login-content_resister {
+  text-align: center;
+  padding: 15px 0 30px 0;
+}
+.login-content_resister a {
+  color: #fff;
+}
+.login-content_resister p {
+  line-height: 3;
+  color: #ff8e00;
 }
 .footer {
   width: 100%;
