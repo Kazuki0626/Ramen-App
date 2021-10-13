@@ -111,6 +111,11 @@
             新規登録
           </button>
         </div>
+        <div class="resister-content_login">
+          <nuxt-link to="../login/">
+            <p>ログイン</p>
+          </nuxt-link>
+        </div>
       </div>
     </div>
     <footer class="footer">
@@ -523,6 +528,16 @@
   color: #fff;
   padding: 12px 24px;
   border-radius: 30px;
+}
+.resister-content_login {
+  text-align: center;
+  padding: 15px 0 30px 0;
+}
+.resister-content_login a {
+  color: #fff;
+}
+.resister-content_login p {
+  color: #ff8e00;
 }
 .footer {
   width: 100%;
