@@ -4,7 +4,7 @@
       <div class="header-top">
         <div class="header-top_content">
           <div class="header_head">
-            <nuxt-link to="/search/">
+            <nuxt-link to="/">
               <div class="header_head_img">
                 <img src="@/assets/img/sample-header.png" />
               </div>
