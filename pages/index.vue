@@ -4,7 +4,7 @@
       <div class="header-top">
         <div class="header-top_content">
           <div class="header_head">
-            <nuxt-link to="/search/">
+            <nuxt-link to="/">
               <div class="header_head_img">
                 <img src="@/assets/img/sample-header.png" />
               </div>
@@ -883,7 +883,7 @@ export default {
   max-width: 50%;
   margin: 0 auto;
   text-align: center;
-  padding: 30px 0 75px 0;
+  padding: 30px 0 100px 0;
 }
 .search-use_content_head h1 {
   font-size: 36px;
