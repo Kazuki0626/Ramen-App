@@ -10,9 +10,9 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@master
       - name: Install Dependencies
-        run: npm install
+        run: yarn
       - name: Build
-        run: npm run generate
+        run: yarn generate
       - name: Archive Production Artifact
         # generateしたdistフォルダを永続化する
         uses: actions/upload-artifact@master
