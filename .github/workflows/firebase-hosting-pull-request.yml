@@ -1,7 +1,8 @@
 name: Deploy to Firebase Hosting on PR
 on:
-  pull_request:
-    types: [opened, synchronize]
+  push:
+    branches:
+      - main
 jobs:
   build:
     name: Build
