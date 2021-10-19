@@ -3,7 +3,7 @@ export const state = () => ({
 })
 
 export const mutations = {
-  getAllShops(shops) {
+  getAllShops(state, shops) {
     state.shops = shops
   },
 }
@@ -26,4 +26,8 @@ export const actions = {
   },
 }
 
-export const getters = {}
+export const getters = {
+  getRamenStore: (state) => {
+    return state.shops.filter((obj) => obj.shops.length < 10)
+  },
+}

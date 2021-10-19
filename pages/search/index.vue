@@ -178,8 +178,8 @@ export default {
       .catch(this.setError)
   },
   methods: {
-    doSearch(shop) {
-      this.$store.commit('fetchAllShops', shop)
+    doSearch(shops) {
+      this.$store.dispatch('fetchAllShops', shops)
     },
     setError(err) {
       console.log(err)
