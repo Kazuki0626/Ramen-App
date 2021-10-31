@@ -50,14 +50,18 @@
           />
         </div>
         <div class="search-free_btn">
-          <button type="button" class="search-free_btn_click" @click="doSearch">
+          <button
+            type="button"
+            class="search-free_btn_click"
+            @click="fetchShopsData()"
+          >
             検索する
           </button>
         </div>
         <div class="search-free_list_content">
           <div class="search-free_list_content_item">
             <div
-              v-for="shop in shops"
+              v-for="shop in searchResults"
               :key="shop.id"
               class="search-free_list_content_item_parent"
             >
@@ -157,12 +161,15 @@ export default {
       longitude: 0,
       show: false,
       freeWord: '',
-      items_1: ['Foo', 'Bar', 'Fizz', 'Buzz'],
-      items_2: ['aaa', 'bbb', 'ccc', 'ddd'],
-      items_3: ['eee', 'fff', 'ggg', 'hhh'],
     }
   },
+  computed: {
+    searchResults() {
+      return this.$store.getters['shops/getFilterByFreeWord']
+    },
+  },
   mounted() {
+    this.fetchShopsData()
     this.$axios(
       `https://webservice.recruit.co.jp/hotpepper/gourmet/v1/?key=${process.env.API_URL}&large_area=Z011&format=json`,
       {
@@ -176,24 +183,12 @@ export default {
     )
       .then((data) => {
         this.shops = data.data.results.shop
-        console.log(data.data.results.shop, '11111')
       })
       .catch(this.setError)
   },
   methods: {
-    doSearch() {
-      this.$axios
-        .get(
-          `https://webservice.recruit.co.jp/hotpepper/gourmet/v1/?key=${process.env.API_URL}&keyword=${this.freeWord}`,
-          {
-            params: {
-              format: 'json',
-            },
-          }
-        )
-        .then((data) => {
-          this.shops = data.data.results.shop
-        })
+    fetchShopsData() {
+      this.$store.dispatch('shops/fetchShopsFilterByFreeWord', this.freeWord)
     },
     setError(err) {
       console.log(err)
