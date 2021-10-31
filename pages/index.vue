@@ -131,7 +131,7 @@
             <h1>多種多様な飲食店</h1>
           </div>
           <div class="search-solution_content_1_img">
-            <img src="@/assets/img/computer_search_kensaku.png" alt="" />
+            <img src="@/assets/img/ramen-app.png" alt="" />
           </div>
           <div class="search-solution_content_1_text">
             <p class="text-justify">
@@ -145,7 +145,7 @@
             <h1>現在位置から探せる</h1>
           </div>
           <div class="search-solution_content_2_img">
-            <img src="@/assets/img/computer_search_kensaku.png" alt="" />
+            <img src="@/assets/img/present-location.png" alt="" />
           </div>
           <div class="search-solution_content_2_text">
             <p class="text-justify">
@@ -159,7 +159,7 @@
             <h1>詳細情報が見れる</h1>
           </div>
           <div class="search-solution_content_3_img">
-            <img src="@/assets/img/computer_search_kensaku.png" alt="" />
+            <img src="@/assets/img/detailed-information.png" alt="" />
           </div>
           <div class="search-solution_content_3_text">
             <p class="text-justify">
@@ -173,7 +173,7 @@
             <h1>価格帯が見れる</h1>
           </div>
           <div class="search-solution_content_4_img">
-            <img src="@/assets/img/computer_search_kensaku.png" alt="" />
+            <img src="@/assets/img/price-range.png" alt="" />
           </div>
           <div class="search-solution_content_4_text">
             <p class="text-justify">
