@@ -1,18 +1,18 @@
-export const state = () => ({
+export const state = {
   shops: [],
-})
+}
 
 export const mutations = {
-  getAllShops(shops) {
+  shopsFilterByFreeWord(state, shops) {
     state.shops = shops
   },
 }
 
 export const actions = {
-  async fetchAllShops({ commit }) {
+  async fetchShopsFilterByFreeWord({ commit }, freeWord) {
     await this.$axios
       .get(
-        `https://webservice.recruit.co.jp/hotpepper/gourmet/v1/?key=${process.env.API_URL}&keyword=${this.freeWord}`,
+        `https://webservice.recruit.co.jp/hotpepper/gourmet/v1/?key=${process.env.API_URL}&keyword=${freeWord}`,
         {
           params: {
             format: 'json',
@@ -20,10 +20,14 @@ export const actions = {
         }
       )
       .then((data) => {
-        const allShops = data.data.results.shop
-        commit('getAllShops', allShops)
+        const result = data.data.results.shop
+        commit('shopsFilterByFreeWord', result)
       })
   },
 }
 
-export const getters = {}
+export const getters = {
+  getFilterByFreeWord(state) {
+    return state.shops
+  },
+}
