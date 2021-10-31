@@ -1,8 +1,8 @@
-name: Ramen-App
+name: Lint-Check
 on:
-  push:
+  pull_request:
     branches:
-    - main
+      - main
 jobs:
   eslint:
     name: eslint
@@ -13,5 +13,7 @@ jobs:
           token: ${{secrets.GA_TOKEN}}
       - name: yarn install
         run: yarn install
+      - name: lint test
+        run: yarn lint:test
       - name: eslint
         run: yarn lint
