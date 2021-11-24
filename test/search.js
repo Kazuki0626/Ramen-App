@@ -1,6 +1,6 @@
 const axios = require('axios')
 
-const search = {
+const functions = {
   isNull: () => null,
   ShopsName: () => {
     const name = { ramenshops: '麺匠 いし井 高田馬場' }
@@ -9,10 +9,11 @@ const search = {
   RamenShopsName: () => {
     axios
       .get(
-        `https://webservice.recruit.co.jp/hotpepper/gourmet/v1/?key=${process.env.API_URL}`
+        `https://webservice.recruit.co.jp/hotpepper/gourmet/v1/?key=${process.env.API_URL}`,
+        {}
       )
-      .then((res) => res.data)
+      .then((shops) => shops.name)
   },
 }
 
-module.exports = search
+module.exports = functions

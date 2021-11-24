@@ -1,4 +1,5 @@
 const search = require('../pages/search/index')
+const functions = require('./search')
 
 test('search function exists', () => {
   expect(search).toBeDefined()
@@ -20,7 +21,7 @@ describe('Checking RamenShopName', () => {
   })
 })
 
-test('RamenShopsName should be 麺匠 いし井 高田馬場', async () => {
-  const data = await search.RamenShopsName()
-  expect(data.name).toEqual('麺匠 いし井 高田馬場')
+test('Shops fetched name should be 博多ラーメン 長浜や 笹塚店', async () => {
+  const shops = await functions.RamenShopsName()
+  expect(shops.name).toEqual('博多ラーメン 長浜や 笹塚店')
 })
