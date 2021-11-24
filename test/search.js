@@ -1,6 +1,6 @@
 const axios = require('axios')
 
-const functions = {
+const search = {
   isNull: () => null,
   ShopsName: () => {
     const name = { ramenshops: '麺匠 いし井 高田馬場' }
@@ -16,4 +16,4 @@ const functions = {
   },
 }
 
-module.exports = functions
+module.exports = search
