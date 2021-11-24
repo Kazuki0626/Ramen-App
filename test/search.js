@@ -1,18 +1,17 @@
+const axios = require('axios')
+
 const search = {
-  async fetchShopsFilterByFreeWord({ commit }, freeWord) {
-    await this.$axios
+  isNull: () => null,
+  ShopsName: () => {
+    const name = { ramenshops: '麺匠 いし井 高田馬場' }
+    return name
+  },
+  RamenShopsName: () => {
+    axios
       .get(
-        `https://webservice.recruit.co.jp/hotpepper/gourmet/v1/?key=${process.env.API_URL}&keyword=${freeWord}`,
-        {
-          params: {
-            format: 'json',
-          },
-        }
+        `https://webservice.recruit.co.jp/hotpepper/gourmet/v1/?key=${process.env.API_URL}`
       )
-      .then((data) => {
-        const result = data.data.results.shop
-        commit('shopsFilterByFreeWord', result)
-      })
+      .then((res) => res.data)
   },
 }
 

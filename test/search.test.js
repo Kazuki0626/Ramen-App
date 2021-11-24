@@ -19,3 +19,8 @@ describe('Checking RamenShopName', () => {
     expect(RamenShopName).toBe('博多ラーメン 長浜や 笹塚店')
   })
 })
+
+test('RamenShopsName should be 麺匠 いし井 高田馬場', async () => {
+  const data = await search.RamenShopsName()
+  expect(data.name).toEqual('麺匠 いし井 高田馬場')
+})
