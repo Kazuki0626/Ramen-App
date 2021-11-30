@@ -23,4 +23,5 @@ describe('Checking RamenShopName', () => {
 test('Shops fetched name should be 博多ラーメン 長浜や 笹塚店', async () => {
   const shops = await search.RamenShopsName()
   expect(shops.name).toBe('博多ラーメン 長浜や 笹塚店')
+  console.log(shops)
 })
